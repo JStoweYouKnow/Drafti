@@ -1,0 +1,198 @@
+{
+  "_description": "NFL team offensive/defensive scheme tendencies for 2026. Used to compute scheme fit bonus in pick grading. scheme_fit_scores: 1.0 = neutral, >1.0 = premium fit for that position in this scheme.",
+  "last_updated": "2026-03-01",
+  "teams": {
+    "ARI": {
+      "offensive_scheme": "Air Raid / RPO", "defensive_scheme": "3-4 base",
+      "off_tendencies": ["pass_heavy", "spread_formations", "quick_game"],
+      "def_tendencies": ["zone_heavy", "edge_stunts", "light_box"],
+      "scheme_fit_scores": {"QB": 1.30, "WR": 1.25, "OT": 1.10, "EDGE": 1.15, "CB": 1.10, "S": 1.05, "IDL": 1.00, "IOL": 1.00, "TE": 1.10, "LB": 0.90, "RB": 0.85}
+    },
+    "ATL": {
+      "offensive_scheme": "Kyle Shanahan West Coast", "defensive_scheme": "4-3 under",
+      "off_tendencies": ["motion_heavy", "outside_zone", "play_action"],
+      "def_tendencies": ["man_coverage", "single_high", "four_down_linemen"],
+      "scheme_fit_scores": {"RB": 1.30, "WR": 1.15, "TE": 1.20, "OT": 1.15, "IOL": 1.10, "EDGE": 1.10, "CB": 1.15, "S": 1.05, "QB": 1.10, "IDL": 1.00, "LB": 0.95}
+    },
+    "BAL": {
+      "offensive_scheme": "Power Run / RPO", "defensive_scheme": "3-4 press man",
+      "off_tendencies": ["run_heavy", "play_action", "designed_qb_runs"],
+      "def_tendencies": ["press_man", "two_high", "stacked_box"],
+      "scheme_fit_scores": {"QB": 1.25, "RB": 1.15, "IOL": 1.20, "OT": 1.10, "CB": 1.20, "EDGE": 1.10, "IDL": 1.10, "S": 1.15, "WR": 0.95, "TE": 1.05, "LB": 1.00}
+    },
+    "BUF": {
+      "offensive_scheme": "Spread / McD hybrid", "defensive_scheme": "4-3 / 3-4 hybrid",
+      "off_tendencies": ["pass_heavy", "spread_11", "rpo_mesh"],
+      "def_tendencies": ["cover_2_man", "zone_blitz", "disguise_coverages"],
+      "scheme_fit_scores": {"QB": 1.20, "WR": 1.20, "OT": 1.10, "EDGE": 1.15, "CB": 1.15, "S": 1.10, "IDL": 1.05, "TE": 1.10, "IOL": 1.05, "LB": 1.00, "RB": 0.90}
+    },
+    "CAR": {
+      "offensive_scheme": "Spread RPO", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["spread_shotgun", "rpo_heavy", "perimeter_run"],
+      "def_tendencies": ["cover_3", "single_high", "four_down_front"],
+      "scheme_fit_scores": {"QB": 1.25, "WR": 1.20, "RB": 1.10, "EDGE": 1.15, "CB": 1.15, "IDL": 1.10, "OT": 1.00, "IOL": 1.00, "TE": 1.05, "LB": 0.95, "S": 1.00}
+    },
+    "CHI": {
+      "offensive_scheme": "West Coast / RPO", "defensive_scheme": "4-3 under",
+      "off_tendencies": ["play_action", "bootleg", "rpo_mesh"],
+      "def_tendencies": ["quarters", "two_high_safety", "zone_coverage"],
+      "scheme_fit_scores": {"QB": 1.20, "WR": 1.15, "TE": 1.10, "EDGE": 1.10, "IDL": 1.15, "CB": 1.10, "S": 1.10, "OT": 1.05, "IOL": 1.05, "LB": 1.00, "RB": 1.00}
+    },
+    "CIN": {
+      "offensive_scheme": "Spread / West Coast", "defensive_scheme": "4-3 hybrid",
+      "off_tendencies": ["pass_heavy", "bunch_formations", "vertical_routes"],
+      "def_tendencies": ["cover_2_man", "blitz_heavy", "two_down_linemen"],
+      "scheme_fit_scores": {"QB": 1.25, "WR": 1.25, "OT": 1.15, "TE": 1.15, "EDGE": 1.15, "CB": 1.10, "IDL": 1.10, "IOL": 1.05, "S": 1.05, "LB": 0.90, "RB": 0.95}
+    },
+    "CLE": {
+      "offensive_scheme": "Gap / Power Run", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["run_heavy", "power_gap", "tight_formations"],
+      "def_tendencies": ["single_high", "man_coverage", "edge_attack"],
+      "scheme_fit_scores": {"RB": 1.25, "IOL": 1.20, "OT": 1.15, "EDGE": 1.20, "IDL": 1.15, "QB": 1.05, "WR": 1.00, "TE": 1.05, "CB": 1.05, "S": 1.00, "LB": 1.00}
+    },
+    "DAL": {
+      "offensive_scheme": "Zone Run / Spread", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["outside_zone", "12_personnel", "play_action"],
+      "def_tendencies": ["cover_2_man", "tampa_2", "four_down_front"],
+      "scheme_fit_scores": {"RB": 1.20, "WR": 1.15, "TE": 1.15, "IOL": 1.10, "OT": 1.15, "EDGE": 1.10, "IDL": 1.10, "QB": 1.10, "CB": 1.10, "LB": 1.00, "S": 1.00}
+    },
+    "DEN": {
+      "offensive_scheme": "Sean Payton Saints / West Coast", "defensive_scheme": "4-3 hybrid",
+      "off_tendencies": ["play_action", "motion_heavy", "short_middle_routes"],
+      "def_tendencies": ["zone_mix", "disguise_coverages", "hybrid_front"],
+      "scheme_fit_scores": {"QB": 1.20, "WR": 1.15, "TE": 1.20, "OT": 1.10, "IOL": 1.05, "EDGE": 1.15, "CB": 1.15, "S": 1.10, "IDL": 1.05, "LB": 1.00, "RB": 1.00}
+    },
+    "DET": {
+      "offensive_scheme": "Kyle Shanahan / Ben Johnson variant", "defensive_scheme": "3-4 hybrid",
+      "off_tendencies": ["outside_zone", "12_personnel", "motion_before_snap"],
+      "def_tendencies": ["zone_coverage", "odd_fronts", "stunts"],
+      "scheme_fit_scores": {"OT": 1.20, "TE": 1.20, "RB": 1.15, "IOL": 1.15, "WR": 1.10, "EDGE": 1.10, "S": 1.15, "QB": 1.10, "CB": 1.05, "IDL": 1.05, "LB": 0.95}
+    },
+    "GB": {
+      "offensive_scheme": "Matt LaFleur / West Coast", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["play_action", "shot_plays", "bunch_motions"],
+      "def_tendencies": ["quarters", "two_high", "edge_attack"],
+      "scheme_fit_scores": {"WR": 1.25, "QB": 1.20, "TE": 1.10, "OT": 1.10, "EDGE": 1.20, "CB": 1.15, "S": 1.10, "IOL": 1.05, "IDL": 1.05, "LB": 0.95, "RB": 0.95}
+    },
+    "HOU": {
+      "offensive_scheme": "Air Raid / Spread RPO", "defensive_scheme": "3-4 base",
+      "off_tendencies": ["pass_heavy", "spread_shotgun", "rpo_read"],
+      "def_tendencies": ["zone_blitz", "quarters", "two_high_safety"],
+      "scheme_fit_scores": {"QB": 1.30, "WR": 1.25, "EDGE": 1.15, "CB": 1.15, "S": 1.15, "OT": 1.10, "TE": 1.10, "IDL": 1.05, "IOL": 1.00, "LB": 0.90, "RB": 0.85}
+    },
+    "IND": {
+      "offensive_scheme": "West Coast / Zone Run", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["outside_zone", "play_action", "12_personnel"],
+      "def_tendencies": ["cover_2", "tampa_2", "four_down_front"],
+      "scheme_fit_scores": {"OT": 1.20, "RB": 1.15, "IOL": 1.15, "QB": 1.15, "WR": 1.10, "TE": 1.10, "EDGE": 1.10, "IDL": 1.05, "CB": 1.10, "S": 1.05, "LB": 1.00}
+    },
+    "JAX": {
+      "offensive_scheme": "Spread / West Coast", "defensive_scheme": "4-3 hybrid",
+      "off_tendencies": ["pass_heavy", "bunch_routes", "play_action"],
+      "def_tendencies": ["cover_3", "zone_coverage", "hybrid_front"],
+      "scheme_fit_scores": {"QB": 1.20, "WR": 1.20, "OT": 1.10, "EDGE": 1.15, "IDL": 1.10, "CB": 1.15, "S": 1.10, "TE": 1.05, "IOL": 1.05, "LB": 0.95, "RB": 0.95}
+    },
+    "KC": {
+      "offensive_scheme": "Andy Reid / West Coast spread", "defensive_scheme": "4-3 hybrid",
+      "off_tendencies": ["pre_snap_motion", "play_action", "spread_trips"],
+      "def_tendencies": ["zone_coverage", "quarters", "disguise"],
+      "scheme_fit_scores": {"QB": 1.20, "WR": 1.20, "TE": 1.25, "OT": 1.10, "IOL": 1.10, "EDGE": 1.10, "CB": 1.15, "S": 1.15, "IDL": 1.05, "LB": 1.00, "RB": 0.90}
+    },
+    "LV": {
+      "offensive_scheme": "West Coast / Power", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["12_personnel", "play_action", "power_run"],
+      "def_tendencies": ["man_coverage", "single_high", "four_down_front"],
+      "scheme_fit_scores": {"QB": 1.15, "OT": 1.15, "IOL": 1.10, "TE": 1.15, "RB": 1.10, "EDGE": 1.10, "CB": 1.15, "IDL": 1.05, "WR": 1.05, "S": 1.00, "LB": 1.00}
+    },
+    "LAC": {
+      "offensive_scheme": "West Coast / Pass First", "defensive_scheme": "3-4 hybrid",
+      "off_tendencies": ["pass_heavy", "vertical_game", "play_action"],
+      "def_tendencies": ["zone_coverage", "two_high", "odd_fronts"],
+      "scheme_fit_scores": {"QB": 1.25, "WR": 1.20, "OT": 1.15, "TE": 1.10, "EDGE": 1.15, "CB": 1.15, "S": 1.15, "IDL": 1.05, "IOL": 1.05, "LB": 0.90, "RB": 0.90}
+    },
+    "LAR": {
+      "offensive_scheme": "McVay West Coast / Spread", "defensive_scheme": "4-3 hybrid",
+      "off_tendencies": ["motion_heavy", "play_action", "12_personnel"],
+      "def_tendencies": ["cover_3_match", "quarters", "stout_front"],
+      "scheme_fit_scores": {"WR": 1.20, "TE": 1.20, "OT": 1.15, "QB": 1.15, "IOL": 1.10, "EDGE": 1.10, "IDL": 1.10, "CB": 1.10, "S": 1.10, "RB": 1.05, "LB": 0.95}
+    },
+    "MIA": {
+      "offensive_scheme": "Spread RPO / Air Raid", "defensive_scheme": "4-3 hybrid",
+      "off_tendencies": ["pass_heavy", "spread_shotgun", "perimeter_runs"],
+      "def_tendencies": ["cover_2_man", "zone_blitz", "aggressive_fronts"],
+      "scheme_fit_scores": {"QB": 1.25, "WR": 1.25, "OT": 1.15, "EDGE": 1.15, "CB": 1.20, "S": 1.10, "IDL": 1.05, "IOL": 1.05, "TE": 1.10, "LB": 0.90, "RB": 1.00}
+    },
+    "MIN": {
+      "offensive_scheme": "Kevin O'Connell / spread play action", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["play_action", "rpo_mesh", "12_personnel"],
+      "def_tendencies": ["quarters", "two_high", "four_down_front"],
+      "scheme_fit_scores": {"WR": 1.25, "QB": 1.20, "TE": 1.15, "OT": 1.10, "IOL": 1.10, "EDGE": 1.10, "CB": 1.15, "S": 1.10, "IDL": 1.05, "LB": 1.00, "RB": 1.00}
+    },
+    "NE": {
+      "offensive_scheme": "West Coast Power", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["multiple_formations", "power_run", "play_action"],
+      "def_tendencies": ["man_coverage", "single_high", "disguise_front"],
+      "scheme_fit_scores": {"QB": 1.20, "IOL": 1.15, "OT": 1.10, "RB": 1.10, "EDGE": 1.15, "IDL": 1.10, "CB": 1.20, "S": 1.15, "TE": 1.05, "WR": 1.05, "LB": 1.00}
+    },
+    "NO": {
+      "offensive_scheme": "Sean Payton / West Coast", "defensive_scheme": "3-4 base",
+      "off_tendencies": ["motion_pre_snap", "play_action", "multiple_sets"],
+      "def_tendencies": ["zone_blitz", "odd_fronts", "two_high"],
+      "scheme_fit_scores": {"QB": 1.20, "WR": 1.15, "TE": 1.20, "OT": 1.10, "IOL": 1.10, "EDGE": 1.15, "CB": 1.10, "S": 1.10, "IDL": 1.10, "LB": 0.95, "RB": 1.00}
+    },
+    "NYG": {
+      "offensive_scheme": "West Coast / Zone Run", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["outside_zone", "play_action", "12_personnel"],
+      "def_tendencies": ["cover_2", "four_down_front", "edge_attack"],
+      "scheme_fit_scores": {"OT": 1.20, "IOL": 1.15, "RB": 1.15, "QB": 1.10, "WR": 1.10, "TE": 1.10, "EDGE": 1.20, "IDL": 1.10, "CB": 1.10, "S": 1.00, "LB": 1.00}
+    },
+    "NYJ": {
+      "offensive_scheme": "West Coast / Power Run", "defensive_scheme": "4-2-5 hybrid",
+      "off_tendencies": ["play_action", "outside_zone", "rpo"],
+      "def_tendencies": ["press_man", "zone_blitz", "aggressive_coverage"],
+      "scheme_fit_scores": {"QB": 1.25, "OT": 1.20, "IOL": 1.15, "WR": 1.15, "CB": 1.20, "EDGE": 1.10, "S": 1.15, "IDL": 1.05, "TE": 1.05, "LB": 0.95, "RB": 1.00}
+    },
+    "PHI": {
+      "offensive_scheme": "Kelly-influenced Spread / Chip Kelly DNA", "defensive_scheme": "4-3 hybrid",
+      "off_tendencies": ["rpo_heavy", "jet_motion", "spread_read"],
+      "def_tendencies": ["cover_3_match", "stout_front", "edge_attack"],
+      "scheme_fit_scores": {"QB": 1.15, "WR": 1.20, "RB": 1.20, "OT": 1.10, "IOL": 1.15, "EDGE": 1.25, "IDL": 1.20, "CB": 1.10, "S": 1.10, "LB": 0.95, "TE": 1.05}
+    },
+    "PIT": {
+      "offensive_scheme": "Power Run / West Coast", "defensive_scheme": "3-4 base",
+      "off_tendencies": ["power_run", "12_personnel", "play_action"],
+      "def_tendencies": ["zone_blitz", "odd_fronts", "two_high"],
+      "scheme_fit_scores": {"RB": 1.15, "OT": 1.10, "IOL": 1.15, "QB": 1.10, "EDGE": 1.20, "IDL": 1.10, "CB": 1.10, "S": 1.10, "LB": 1.05, "WR": 1.00, "TE": 1.00}
+    },
+    "SF": {
+      "offensive_scheme": "Kyle Shanahan West Coast", "defensive_scheme": "4-3 hybrid",
+      "off_tendencies": ["outside_zone", "motion_heavy", "play_action", "12_personnel"],
+      "def_tendencies": ["cover_3_match", "two_high", "stout_run_fits"],
+      "scheme_fit_scores": {"RB": 1.35, "OT": 1.25, "IOL": 1.20, "TE": 1.25, "WR": 1.15, "EDGE": 1.10, "IDL": 1.10, "CB": 1.10, "S": 1.15, "QB": 1.10, "LB": 0.95}
+    },
+    "SEA": {
+      "offensive_scheme": "West Coast / RPO", "defensive_scheme": "Cover 3 / Seattle 3",
+      "off_tendencies": ["rpo_heavy", "play_action", "deep_shots"],
+      "def_tendencies": ["cover_3", "single_high", "man_press"],
+      "scheme_fit_scores": {"QB": 1.20, "WR": 1.15, "OT": 1.10, "CB": 1.25, "EDGE": 1.10, "IDL": 1.05, "S": 1.20, "IOL": 1.05, "TE": 1.05, "LB": 1.00, "RB": 1.05}
+    },
+    "TB": {
+      "offensive_scheme": "West Coast Pass First", "defensive_scheme": "4-3 hybrid",
+      "off_tendencies": ["pass_heavy", "multiple_routes", "vertical_game"],
+      "def_tendencies": ["cover_2_tampa", "four_down_front", "coverage_rotation"],
+      "scheme_fit_scores": {"QB": 1.25, "WR": 1.20, "OT": 1.15, "TE": 1.10, "EDGE": 1.10, "CB": 1.15, "IDL": 1.05, "IOL": 1.05, "S": 1.05, "LB": 1.00, "RB": 0.90}
+    },
+    "TEN": {
+      "offensive_scheme": "Power Run / Gap Scheme", "defensive_scheme": "4-3 base",
+      "off_tendencies": ["power_run", "gap_scheme", "tight_formations"],
+      "def_tendencies": ["man_coverage", "single_high", "four_down_front"],
+      "scheme_fit_scores": {"RB": 1.25, "OT": 1.20, "IOL": 1.20, "EDGE": 1.15, "IDL": 1.10, "CB": 1.10, "QB": 1.10, "S": 1.05, "LB": 1.05, "WR": 0.95, "TE": 1.05}
+    },
+    "WAS": {
+      "offensive_scheme": "Spread / RPO pass first", "defensive_scheme": "3-4 hybrid",
+      "off_tendencies": ["pass_heavy", "spread_formations", "rpo"],
+      "def_tendencies": ["zone_mix", "odd_fronts", "cover_2"],
+      "scheme_fit_scores": {"QB": 1.25, "WR": 1.20, "OT": 1.15, "EDGE": 1.15, "CB": 1.10, "S": 1.10, "IDL": 1.10, "IOL": 1.05, "TE": 1.10, "LB": 0.95, "RB": 1.00}
+    }
+  }
+}

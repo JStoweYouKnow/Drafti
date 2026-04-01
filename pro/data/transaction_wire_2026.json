@@ -1,0 +1,9 @@
+{
+  "_description": "2026 NFL Draft transaction wire. Tracks eligibility declarations, withdrawals, medical retirements, and transfer notes. Status values: declared | withdrew | medical_retirement | transferred | undeclared.",
+  "draft_year": 2026,
+  "last_updated": "2026-03-27",
+  "_populate_instructions": "Add entries here from NFL.com team official sites, beat reporters, and player social media after the 2025 CFB season (Jan 2026). Verify each entry before adding — do not generate from model knowledge.",
+  "entries": [
+    {"name": "Arch Manning",        "position": "QB",   "school": "Texas",         "status": "withdrew",           "date": "2025-12-01", "notes": "Announced return to Texas for 2026 season. Not entering 2026 draft.", "source": "Texas Athletics / ESPN"}
+  ]
+}

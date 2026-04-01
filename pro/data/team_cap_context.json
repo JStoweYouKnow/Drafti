@@ -1,0 +1,199 @@
+{
+  "_description": "2026 NFL team cap context. cap_space_m = estimated cap space in millions. position_urgency: 0.0-1.0 (1.0 = desperate need, 0.0 = no need). expiring_starters = positions losing free agents this cycle.",
+  "last_updated": "2026-03-01",
+  "salary_cap_2026": 279.0,
+  "teams": {
+    "ARI": {
+      "cap_space_m": 42.0, "cap_tier": "high",
+      "expiring_starters": ["CB1", "EDGE1"],
+      "position_urgency": {"QB": 0.9, "EDGE": 0.7, "CB": 0.7, "OT": 0.3, "WR": 0.4, "IDL": 0.3, "S": 0.2, "LB": 0.2, "IOL": 0.2, "TE": 0.1, "RB": 0.2},
+      "notes": "Rebuilding around young QB. Need pass-rush and secondary help."
+    },
+    "ATL": {
+      "cap_space_m": 28.0, "cap_tier": "medium",
+      "expiring_starters": ["OT1", "LB1"],
+      "position_urgency": {"OT": 0.8, "LB": 0.6, "EDGE": 0.5, "QB": 0.3, "WR": 0.3, "IDL": 0.4, "CB": 0.4, "S": 0.3, "IOL": 0.3, "TE": 0.2, "RB": 0.2},
+      "notes": "Need offensive line depth after losing starter."
+    },
+    "BAL": {
+      "cap_space_m": 18.0, "cap_tier": "medium",
+      "expiring_starters": ["WR1", "IDL1"],
+      "position_urgency": {"WR": 0.8, "IDL": 0.7, "EDGE": 0.5, "OT": 0.4, "CB": 0.4, "QB": 0.1, "S": 0.3, "LB": 0.3, "IOL": 0.2, "TE": 0.3, "RB": 0.3},
+      "notes": "Core locked up. Need wide receiver and interior DL depth."
+    },
+    "BUF": {
+      "cap_space_m": 12.0, "cap_tier": "low",
+      "expiring_starters": ["EDGE1", "CB2"],
+      "position_urgency": {"EDGE": 0.8, "CB": 0.7, "IDL": 0.5, "OT": 0.5, "QB": 0.1, "WR": 0.3, "S": 0.3, "LB": 0.2, "IOL": 0.3, "TE": 0.2, "RB": 0.2},
+      "notes": "Tight against the cap. Need edge rush and CB replacement."
+    },
+    "CAR": {
+      "cap_space_m": 55.0, "cap_tier": "high",
+      "expiring_starters": [],
+      "position_urgency": {"QB": 0.6, "OT": 0.8, "EDGE": 0.7, "WR": 0.6, "CB": 0.6, "IDL": 0.5, "IOL": 0.6, "S": 0.4, "LB": 0.4, "TE": 0.3, "RB": 0.2},
+      "notes": "Rebuilding team with most cap space in league. Multiple major needs."
+    },
+    "CHI": {
+      "cap_space_m": 35.0, "cap_tier": "high",
+      "expiring_starters": ["OT2", "S1"],
+      "position_urgency": {"OT": 0.7, "WR": 0.7, "EDGE": 0.6, "CB": 0.5, "IDL": 0.5, "QB": 0.2, "IOL": 0.4, "S": 0.5, "LB": 0.3, "TE": 0.3, "RB": 0.2},
+      "notes": "Building around young QB. Need more weapons and pass rush."
+    },
+    "CIN": {
+      "cap_space_m": 20.0, "cap_tier": "medium",
+      "expiring_starters": ["OT1", "CB1"],
+      "position_urgency": {"OT": 0.9, "CB": 0.7, "IDL": 0.5, "LB": 0.4, "QB": 0.1, "WR": 0.2, "EDGE": 0.4, "S": 0.3, "IOL": 0.4, "TE": 0.2, "RB": 0.3},
+      "notes": "Left tackle is biggest need after starter departure."
+    },
+    "CLE": {
+      "cap_space_m": 8.0, "cap_tier": "over",
+      "expiring_starters": ["QB1", "WR1"],
+      "position_urgency": {"QB": 0.9, "WR": 0.7, "EDGE": 0.6, "OT": 0.5, "CB": 0.4, "IDL": 0.3, "IOL": 0.3, "S": 0.3, "LB": 0.2, "TE": 0.3, "RB": 0.2},
+      "notes": "QB situation uncertain. Need franchise QB and weapons."
+    },
+    "DAL": {
+      "cap_space_m": 15.0, "cap_tier": "low",
+      "expiring_starters": ["EDGE1", "CB1"],
+      "position_urgency": {"EDGE": 0.8, "CB": 0.6, "LB": 0.4, "WR": 0.3, "QB": 0.1, "OT": 0.4, "IDL": 0.4, "S": 0.3, "IOL": 0.3, "TE": 0.2, "RB": 0.3},
+      "notes": "Need pass rush and secondary help. Edge is top priority."
+    },
+    "DEN": {
+      "cap_space_m": 32.0, "cap_tier": "high",
+      "expiring_starters": ["WR1", "OT1"],
+      "position_urgency": {"WR": 0.8, "OT": 0.7, "CB": 0.5, "EDGE": 0.5, "QB": 0.4, "IDL": 0.4, "S": 0.3, "LB": 0.3, "IOL": 0.3, "TE": 0.4, "RB": 0.2},
+      "notes": "Need weapons and offensive line reinforcement."
+    },
+    "DET": {
+      "cap_space_m": 22.0, "cap_tier": "medium",
+      "expiring_starters": ["CB1", "S1"],
+      "position_urgency": {"CB": 0.8, "S": 0.7, "EDGE": 0.5, "QB": 0.1, "WR": 0.3, "OT": 0.3, "IDL": 0.4, "IOL": 0.2, "LB": 0.3, "TE": 0.2, "RB": 0.3},
+      "notes": "Strong offense. Need secondary upgrade desperately."
+    },
+    "GB": {
+      "cap_space_m": 26.0, "cap_tier": "medium",
+      "expiring_starters": ["WR2", "IOL1"],
+      "position_urgency": {"WR": 0.7, "IOL": 0.6, "EDGE": 0.5, "CB": 0.5, "QB": 0.1, "OT": 0.3, "IDL": 0.4, "S": 0.3, "LB": 0.2, "TE": 0.2, "RB": 0.2},
+      "notes": "Young QB needs more weapons. Interior line depth needed."
+    },
+    "HOU": {
+      "cap_space_m": 30.0, "cap_tier": "high",
+      "expiring_starters": ["CB1", "LB1"],
+      "position_urgency": {"CB": 0.8, "LB": 0.6, "OT": 0.6, "EDGE": 0.5, "QB": 0.1, "WR": 0.3, "IDL": 0.4, "S": 0.4, "IOL": 0.3, "TE": 0.2, "RB": 0.3},
+      "notes": "Corner is top need. Pushing for Super Bowl window."
+    },
+    "IND": {
+      "cap_space_m": 38.0, "cap_tier": "high",
+      "expiring_starters": ["QB1", "EDGE1"],
+      "position_urgency": {"QB": 0.9, "EDGE": 0.7, "WR": 0.6, "OT": 0.5, "CB": 0.4, "IDL": 0.4, "IOL": 0.3, "S": 0.3, "LB": 0.3, "TE": 0.3, "RB": 0.2},
+      "notes": "QB is the most urgent need. Still looking for franchise player."
+    },
+    "JAX": {
+      "cap_space_m": 25.0, "cap_tier": "medium",
+      "expiring_starters": ["WR1", "CB1"],
+      "position_urgency": {"WR": 0.7, "CB": 0.7, "OT": 0.6, "EDGE": 0.5, "QB": 0.3, "IDL": 0.4, "IOL": 0.4, "S": 0.3, "LB": 0.2, "TE": 0.2, "RB": 0.2},
+      "notes": "Need offensive weapons and secondary depth."
+    },
+    "KC": {
+      "cap_space_m": 10.0, "cap_tier": "low",
+      "expiring_starters": ["WR1", "EDGE1"],
+      "position_urgency": {"WR": 0.8, "EDGE": 0.7, "OT": 0.5, "CB": 0.4, "QB": 0.1, "IDL": 0.3, "IOL": 0.3, "S": 0.3, "LB": 0.2, "TE": 0.4, "RB": 0.2},
+      "notes": "Tight cap. WR1 and edge rusher most critical needs."
+    },
+    "LV": {
+      "cap_space_m": 44.0, "cap_tier": "high",
+      "expiring_starters": ["QB1", "WR1"],
+      "position_urgency": {"QB": 0.9, "WR": 0.7, "OT": 0.6, "EDGE": 0.6, "CB": 0.5, "IDL": 0.4, "IOL": 0.4, "S": 0.3, "LB": 0.3, "TE": 0.3, "RB": 0.2},
+      "notes": "Major rebuild. QB is highest priority with big cap space."
+    },
+    "LAC": {
+      "cap_space_m": 28.0, "cap_tier": "medium",
+      "expiring_starters": ["OT1", "CB1"],
+      "position_urgency": {"OT": 0.8, "CB": 0.6, "EDGE": 0.5, "IDL": 0.5, "QB": 0.2, "WR": 0.3, "IOL": 0.4, "S": 0.3, "LB": 0.3, "TE": 0.2, "RB": 0.2},
+      "notes": "Left tackle and corner are key offseason targets."
+    },
+    "LAR": {
+      "cap_space_m": 14.0, "cap_tier": "low",
+      "expiring_starters": ["IDL1", "WR2"],
+      "position_urgency": {"IDL": 0.8, "WR": 0.6, "OT": 0.5, "CB": 0.5, "QB": 0.1, "EDGE": 0.4, "IOL": 0.3, "S": 0.3, "LB": 0.3, "TE": 0.2, "RB": 0.3},
+      "notes": "Interior defensive line is biggest need. Managed cap."
+    },
+    "MIA": {
+      "cap_space_m": 16.0, "cap_tier": "low",
+      "expiring_starters": ["OT1", "LB1"],
+      "position_urgency": {"OT": 0.9, "LB": 0.6, "EDGE": 0.6, "CB": 0.5, "QB": 0.1, "WR": 0.2, "IDL": 0.4, "IOL": 0.4, "S": 0.3, "TE": 0.2, "RB": 0.2},
+      "notes": "Offensive line is the biggest offseason priority."
+    },
+    "MIN": {
+      "cap_space_m": 20.0, "cap_tier": "medium",
+      "expiring_starters": ["EDGE1", "S1"],
+      "position_urgency": {"EDGE": 0.8, "S": 0.6, "CB": 0.5, "IDL": 0.5, "QB": 0.1, "WR": 0.3, "OT": 0.4, "IOL": 0.3, "LB": 0.3, "TE": 0.2, "RB": 0.2},
+      "notes": "Pass rush and safety are biggest needs."
+    },
+    "NE": {
+      "cap_space_m": 50.0, "cap_tier": "high",
+      "expiring_starters": [],
+      "position_urgency": {"QB": 0.9, "WR": 0.8, "OT": 0.7, "EDGE": 0.6, "CB": 0.6, "IDL": 0.5, "IOL": 0.5, "S": 0.4, "LB": 0.4, "TE": 0.4, "RB": 0.3},
+      "notes": "Full rebuild. Most flexible cap situation in the NFL."
+    },
+    "NO": {
+      "cap_space_m": 5.0, "cap_tier": "over",
+      "expiring_starters": ["QB1", "WR1"],
+      "position_urgency": {"QB": 0.9, "WR": 0.7, "EDGE": 0.6, "OT": 0.5, "CB": 0.4, "IDL": 0.3, "S": 0.3, "IOL": 0.3, "LB": 0.2, "TE": 0.2, "RB": 0.2},
+      "notes": "Cap restricted. QB situation is most urgent."
+    },
+    "NYG": {
+      "cap_space_m": 60.0, "cap_tier": "high",
+      "expiring_starters": [],
+      "position_urgency": {"QB": 0.9, "OT": 0.8, "WR": 0.7, "EDGE": 0.7, "CB": 0.5, "IDL": 0.5, "IOL": 0.5, "S": 0.4, "LB": 0.4, "TE": 0.3, "RB": 0.3},
+      "notes": "Significant rebuild. QB is highest priority with massive cap space."
+    },
+    "NYJ": {
+      "cap_space_m": 30.0, "cap_tier": "high",
+      "expiring_starters": ["CB1", "OT1"],
+      "position_urgency": {"CB": 0.8, "OT": 0.7, "WR": 0.6, "IDL": 0.5, "QB": 0.3, "EDGE": 0.5, "IOL": 0.4, "S": 0.4, "LB": 0.3, "TE": 0.2, "RB": 0.2},
+      "notes": "Need corner and tackle. Otherwise positioned to compete."
+    },
+    "PHI": {
+      "cap_space_m": 18.0, "cap_tier": "medium",
+      "expiring_starters": ["WR1", "IOL1"],
+      "position_urgency": {"WR": 0.7, "IOL": 0.7, "EDGE": 0.5, "CB": 0.4, "QB": 0.1, "OT": 0.3, "IDL": 0.3, "S": 0.3, "LB": 0.3, "TE": 0.2, "RB": 0.4},
+      "notes": "Still in win-now mode. WR and guard are priorities."
+    },
+    "PIT": {
+      "cap_space_m": 22.0, "cap_tier": "medium",
+      "expiring_starters": ["QB1", "WR1"],
+      "position_urgency": {"QB": 0.9, "WR": 0.7, "OT": 0.5, "EDGE": 0.4, "CB": 0.4, "IDL": 0.4, "IOL": 0.4, "S": 0.3, "LB": 0.2, "TE": 0.3, "RB": 0.3},
+      "notes": "QB situation is critical. Defense is relatively solid."
+    },
+    "SF": {
+      "cap_space_m": 12.0, "cap_tier": "low",
+      "expiring_starters": ["EDGE1", "CB1"],
+      "position_urgency": {"EDGE": 0.8, "CB": 0.7, "RB": 0.5, "IOL": 0.5, "QB": 0.2, "WR": 0.2, "OT": 0.3, "IDL": 0.3, "S": 0.4, "LB": 0.3, "TE": 0.2},
+      "notes": "Cap constrained. Edge and CB are top priorities."
+    },
+    "SEA": {
+      "cap_space_m": 34.0, "cap_tier": "high",
+      "expiring_starters": ["CB1", "EDGE1"],
+      "position_urgency": {"CB": 0.9, "EDGE": 0.8, "QB": 0.4, "WR": 0.4, "OT": 0.5, "IDL": 0.5, "IOL": 0.3, "S": 0.4, "LB": 0.3, "TE": 0.2, "RB": 0.3},
+      "notes": "Rebuilding secondary. Corner is most urgent need."
+    },
+    "TB": {
+      "cap_space_m": 20.0, "cap_tier": "medium",
+      "expiring_starters": ["WR1", "LB1"],
+      "position_urgency": {"WR": 0.8, "LB": 0.6, "EDGE": 0.5, "CB": 0.4, "QB": 0.3, "OT": 0.4, "IDL": 0.4, "IOL": 0.3, "S": 0.3, "TE": 0.2, "RB": 0.2},
+      "notes": "Need WR1 and linebacker help."
+    },
+    "TEN": {
+      "cap_space_m": 46.0, "cap_tier": "high",
+      "expiring_starters": ["QB1", "OT1"],
+      "position_urgency": {"QB": 0.9, "OT": 0.8, "WR": 0.7, "EDGE": 0.6, "CB": 0.5, "IDL": 0.4, "IOL": 0.4, "S": 0.3, "LB": 0.3, "TE": 0.3, "RB": 0.3},
+      "notes": "Complete rebuild around new regime. Multiple top needs."
+    },
+    "WAS": {
+      "cap_space_m": 28.0, "cap_tier": "medium",
+      "expiring_starters": ["OT1", "IDL1"],
+      "position_urgency": {"OT": 0.8, "IDL": 0.7, "WR": 0.5, "CB": 0.5, "QB": 0.2, "EDGE": 0.5, "IOL": 0.4, "S": 0.3, "LB": 0.3, "TE": 0.2, "RB": 0.2},
+      "notes": "Protecting young QB is priority. Tackle and interior DL needed."
+    }
+  }
+}

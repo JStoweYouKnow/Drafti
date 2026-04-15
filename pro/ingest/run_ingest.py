@@ -21,7 +21,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
+DATA_DIR = os.environ.get("DRAFTI_DATA_DIR") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 WIRE_FILE_TEMPLATE = "transaction_wire_{year}.json"
 STATUS_CACHE_TEMPLATE = "player_status_cache_{year}.json"
 

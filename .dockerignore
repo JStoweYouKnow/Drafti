@@ -1,0 +1,5 @@
+__pycache__
+**/__pycache__
+*.pyc
+.git
+draft_results.json

@@ -16,7 +16,7 @@ import urllib.request
 
 import certifi
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+DATA_DIR = os.environ.get("DRAFTI_DATA_DIR") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 OUTPUT_PATH = os.path.join(DATA_DIR, "historical_drafts.json")
 
 NFLVERSE_DRAFT_CSV = (

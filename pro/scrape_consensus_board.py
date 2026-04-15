@@ -29,7 +29,7 @@ import certifi
 import requests
 from bs4 import BeautifulSoup
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+DATA_DIR = os.environ.get("DRAFTI_DATA_DIR") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
 # Realistic browser headers to avoid basic bot detection
 HEADERS = {
@@ -522,6 +522,82 @@ def build_board_json(prospects, year, alt_sources=None):
     return board
 
 
+def _load_existing_board(year):
+    """Load the currently saved board for a year. Returns {} if none."""
+    path = os.path.join(DATA_DIR, f"consensus_board_{year}.json")
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def compute_board_velocity(old_board, new_prospects):
+    """Compute rank deltas by comparing new scrape to saved board.
+
+    For each prospect in new_prospects, attaches a board_velocity dict:
+      weekly_change: new_rank - old_rank (positive = moved up / is rising)
+      peak_rank: best rank seen across all snapshots
+      stability: high / moderate / unstable based on movement magnitude
+      rank_history: [{date, rank}, ...]  (appended each run)
+    """
+    if not old_board or "prospects" not in old_board:
+        return new_prospects
+
+    old_lookup = {}
+    for p in old_board["prospects"]:
+        key = re.sub(r"\s+", " ", str(p.get("name", "")).strip().lower())
+        old_lookup[key] = p
+
+    today = time.strftime("%Y-%m-%d")
+
+    for p in new_prospects:
+        key = re.sub(r"\s+", " ", str(p.get("name", "")).strip().lower())
+        old_p = old_lookup.get(key)
+        new_rank = p["consensus_rank"]
+
+        if old_p is None:
+            p["board_velocity"] = {
+                "weekly_change": 0,
+                "peak_rank": new_rank,
+                "stability": "high",
+                "rank_history": [{"date": today, "rank": new_rank}],
+            }
+            continue
+
+        old_rank = old_p.get("consensus_rank", new_rank)
+        weekly_change = old_rank - new_rank  # positive = moved up
+
+        # Preserve existing history, append new entry
+        old_vel = old_p.get("board_velocity", {})
+        history = list(old_vel.get("rank_history", []))
+        history.append({"date": today, "rank": new_rank})
+        history = history[-12:]  # keep last 12 snapshots (~3 months of weekly runs)
+
+        # Peak rank = best (lowest number) ever seen
+        all_ranks = [h["rank"] for h in history]
+        peak_rank = min(all_ranks)
+
+        # Stability: look at variance over last 4 snapshots
+        recent = [h["rank"] for h in history[-4:]]
+        if len(recent) >= 2:
+            spread = max(recent) - min(recent)
+            stability = "high" if spread <= 2 else ("moderate" if spread <= 7 else "unstable")
+        else:
+            stability = "high"
+
+        p["board_velocity"] = {
+            "weekly_change": weekly_change,
+            "peak_rank": peak_rank,
+            "stability": stability,
+            "rank_history": history,
+        }
+
+    return new_prospects
+
+
 def scrape_year(year, multi_source=True):
     """Scrape consensus board for a given year and save to JSON.
 
@@ -537,10 +613,22 @@ def scrape_year(year, multi_source=True):
         print(f"  FAILED: Could not fetch page for {year}")
         return None
 
+    # Load existing board BEFORE overwriting — used for velocity tracking
+    existing_board = _load_existing_board(year)
+    if existing_board.get("prospects"):
+        print(f"  Loaded existing board ({len(existing_board['prospects'])} prospects) for velocity comparison")
+
     prospects = parse_board(html, year)
     if not prospects:
         print(f"  FAILED: No prospects parsed for {year}")
         return None
+
+    # Compute rank velocity vs. previous scrape
+    prospects = compute_board_velocity(existing_board, prospects)
+    risers = [p for p in prospects if p.get("board_velocity", {}).get("weekly_change", 0) >= 3]
+    fallers = [p for p in prospects if p.get("board_velocity", {}).get("weekly_change", 0) <= -3]
+    if risers or fallers:
+        print(f"  Velocity: {len(risers)} rising (+3 or more), {len(fallers)} falling (-3 or more)")
 
     # Gather alternate source rankings for blending
     alt_sources = {}

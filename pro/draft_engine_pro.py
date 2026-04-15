@@ -34,7 +34,7 @@ STATUS_LABELS = {
     "bust": "Bust", "out": "Out of League", "unknown": "Too Early",
 }
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+DATA_DIR = os.environ.get("DRAFTI_DATA_DIR") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
 # Known prospects not draft-eligible for the given class year.
 # Source boards can include underclassmen hype names, so we filter them out.

@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+echo "[start] PORT=${PORT} DRAFTI_DATA_DIR=${DRAFTI_DATA_DIR}"
 
 # Persistent volume on Railway; falls back to bundled data for local dev
 DATA_DIR="${DRAFTI_DATA_DIR:-/app/pro/data}"

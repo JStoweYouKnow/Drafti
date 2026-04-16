@@ -538,11 +538,11 @@ with hdr_c2:
     )
     st.session_state.pro_mode = mode
 with hdr_c3:
-    theme_col1, theme_col2 = st.columns(2)
-    with theme_col1:
-        if st.button("Dark" if st.session_state.theme == "light" else "Light", width="stretch"):
-            st.session_state.theme = "light" if st.session_state.theme == "dark" else "dark"
-            st.rerun()
+    # Align theme button baseline with the mode selectbox control row.
+    st.markdown("<div style='height:30px;'></div>", unsafe_allow_html=True)
+    if st.button("Dark" if st.session_state.theme == "light" else "Light", width="stretch"):
+        st.session_state.theme = "light" if st.session_state.theme == "dark" else "dark"
+        st.rerun()
 
 search_c1, search_c2 = st.columns([8, 1])
 with search_c1:

@@ -971,7 +971,7 @@ elif st.session_state.pro_mode == "Historical Analysis":
 elif st.session_state.pro_mode == "Prospect Explorer":
     _section_header("Prospect Explorer", "Browse the consensus big board, positional value, combine data, and transaction wire.")
 
-    tabs = st.tabs(["Consensus Board", "Transaction Wire", "Prospect Intelligence", "Positional Value", "Trade Value Chart", "Hit Rates"])
+    tabs = st.tabs(["Consensus Board", "Prospect Intelligence", "Positional Value", "Trade Value Chart", "Hit Rates"])
 
     # --- Consensus Board ---
     with tabs[0]:
@@ -1105,8 +1105,8 @@ elif st.session_state.pro_mode == "Prospect Explorer":
                     unsafe_allow_html=True,
                 )
 
-    # --- Transaction Wire ---
-    with tabs[1]:
+    # --- Transaction Wire (hidden; tab removed) ---
+    if False:
         wire_ctrl_1, wire_ctrl_2 = st.columns([2, 1])
         with wire_ctrl_1:
             wire_year = st.number_input("Draft Year", min_value=2020, max_value=2030, value=int(board_year), key="wire_year_input")
@@ -1260,7 +1260,7 @@ elif st.session_state.pro_mode == "Prospect Explorer":
                         )
 
     # --- Prospect Intelligence ---
-    with tabs[2]:
+    with tabs[1]:
         intel_year = board_year
         intel_board = load_consensus_board(intel_year)
         if intel_board is None:
@@ -1430,7 +1430,7 @@ elif st.session_state.pro_mode == "Prospect Explorer":
                 st.info("No injury history data on file yet.")
 
     # --- Positional Value ---
-    with tabs[3]:
+    with tabs[2]:
         pos_values = load_position_values()
         multipliers = pos_values.get("positional_value_multiplier", {})
 
@@ -1467,7 +1467,7 @@ elif st.session_state.pro_mode == "Prospect Explorer":
             st.info("No numeric positional multipliers available in the loaded dataset.", icon="ℹ️")
 
     # --- Trade Value Chart ---
-    with tabs[4]:
+    with tabs[3]:
         _eyebrow("Draft Pick Trade Value Chart")
         st.caption("Compare pick values and calculate trade fairness.")
 
@@ -1502,7 +1502,7 @@ elif st.session_state.pro_mode == "Prospect Explorer":
             st.area_chart(chart_df, color="#10b981")
 
     # --- Hit Rates ---
-    with tabs[5]:
+    with tabs[4]:
         _eyebrow("Historical Hit Rates by Position & Round")
         st.caption("% of draft picks at each position that became quality starters, based on 2000-2022 data.")
 

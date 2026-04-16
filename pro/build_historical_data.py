@@ -12,6 +12,7 @@ import json
 import math
 import os
 import ssl
+import time
 import urllib.request
 
 import certifi
@@ -44,7 +45,9 @@ POSITION_MAP = {
 
 # Years to include
 START_YEAR = 2015
-END_YEAR = 2024
+# Keep historical outcomes aligned with the most recent completed draft year.
+# Example: in 2026, include through 2025.
+END_YEAR = max(START_YEAR, time.gmtime().tm_year - 1)
 
 
 def download_csv():

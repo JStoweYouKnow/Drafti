@@ -2,9 +2,10 @@
   "_description": "2024 NFL Draft consensus big board scraped from NFL Mock Draft Database.",
   "_source": "https://www.nflmockdraftdatabase.com/big-boards/2024/consensus-big-board-2024",
   "draft_year": 2024,
-  "last_updated": "2026-03-26",
+  "last_updated": "2026-04-08",
   "sources": [
-    "NFL Mock Draft Database (consensus aggregation)"
+    "NFL Mock Draft Database (consensus aggregation)",
+    "nflverse combine CSV"
   ],
   "prospects": [
     {
@@ -15,8 +16,8 @@
       "grade": 100.0,
       "tier": 1,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 214,
         "forty": null,
         "arm": null
       },
@@ -32,8 +33,8 @@
       "grade": 99.5,
       "tier": 1,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 210,
         "forty": null,
         "arm": null
       },
@@ -49,8 +50,8 @@
       "grade": 99.0,
       "tier": 1,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 223,
         "forty": null,
         "arm": null
       },
@@ -66,8 +67,8 @@
       "grade": 98.5,
       "tier": 1,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 209,
         "forty": null,
         "arm": null
       },
@@ -83,10 +84,12 @@
       "grade": 98.0,
       "tier": 1,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 219,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "three_cone": 6.82,
+        "short_shuttle": 4.23
       },
       "peak_rank": 5,
       "projected_pick": 11,
@@ -100,8 +103,8 @@
       "grade": 97.5,
       "tier": 2,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 200,
         "forty": null,
         "arm": null
       },
@@ -117,10 +120,14 @@
       "grade": 97.0,
       "tier": 2,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-9",
+        "weight": 321,
+        "forty": 5.05,
+        "arm": null,
+        "vertical": 28.0,
+        "broad_jump": 112,
+        "three_cone": 7.31,
+        "short_shuttle": 4.51
       },
       "peak_rank": 5,
       "projected_pick": 7,
@@ -134,10 +141,14 @@
       "grade": 96.5,
       "tier": 2,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 212,
+        "forty": 4.45,
+        "arm": null,
+        "vertical": 39.0,
+        "broad_jump": 124,
+        "three_cone": 6.88,
+        "short_shuttle": 4.03
       },
       "peak_rank": 7,
       "projected_pick": 6,
@@ -151,10 +162,12 @@
       "grade": 96.0,
       "tier": 2,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 247,
+        "forty": 4.46,
+        "arm": null,
+        "vertical": 40.5,
+        "broad_jump": 127
       },
       "peak_rank": 9,
       "projected_pick": 8,
@@ -168,8 +181,8 @@
       "grade": 95.5,
       "tier": 2,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 243,
         "forty": null,
         "arm": null
       },
@@ -185,10 +198,12 @@
       "grade": 95.0,
       "tier": 2,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 312,
+        "forty": 5.11,
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 109
       },
       "peak_rank": 5,
       "projected_pick": 14,
@@ -219,10 +234,12 @@
       "grade": 94.0,
       "tier": 2,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 324,
+        "forty": 5.13,
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 111
       },
       "peak_rank": 11
     },
@@ -234,10 +251,12 @@
       "grade": 93.5,
       "tier": 2,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 195,
+        "forty": 4.33,
+        "arm": null,
+        "vertical": 38.0,
+        "broad_jump": 122
       },
       "peak_rank": 13,
       "projected_pick": 15,
@@ -251,10 +270,12 @@
       "grade": 93.0,
       "tier": 2,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 297,
+        "forty": 4.87,
+        "arm": null,
+        "vertical": 33.0,
+        "broad_jump": 111
       },
       "peak_rank": 15,
       "projected_pick": 9,
@@ -268,10 +289,12 @@
       "grade": 92.5,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 189,
+        "forty": 4.5,
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 129
       },
       "peak_rank": 12,
       "projected_pick": 17,
@@ -285,10 +308,12 @@
       "grade": 92.0,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 259,
+        "forty": 4.64,
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 116
       },
       "peak_rank": 10,
       "projected_pick": 19,
@@ -302,10 +327,12 @@
       "grade": 91.5,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 317,
+        "forty": 5.01,
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 113
       },
       "peak_rank": 16,
       "projected_pick": 16,
@@ -319,10 +346,14 @@
       "grade": 91.0,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 254,
+        "forty": 4.58,
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 127,
+        "three_cone": 7.31,
+        "short_shuttle": 4.44
       },
       "peak_rank": 11,
       "projected_pick": 23,
@@ -336,10 +367,12 @@
       "grade": 90.5,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 209,
+        "forty": 4.33,
+        "arm": null,
+        "vertical": 38.5,
+        "broad_jump": 126
       },
       "peak_rank": 19
     },
@@ -351,10 +384,12 @@
       "grade": 90.0,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-8",
+        "weight": 340,
+        "forty": 5.07,
+        "arm": null,
+        "vertical": 25.5,
+        "broad_jump": 111
       },
       "peak_rank": 16,
       "projected_pick": 25,
@@ -368,8 +403,8 @@
       "grade": 89.5,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 203,
         "forty": null,
         "arm": null
       },
@@ -385,8 +420,8 @@
       "grade": 89.0,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-5",
+        "weight": 313,
         "forty": null,
         "arm": null
       },
@@ -402,8 +437,8 @@
       "grade": 88.5,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 304,
         "forty": null,
         "arm": null
       },
@@ -419,8 +454,8 @@
       "grade": 88.0,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 216,
         "forty": null,
         "arm": null
       },
@@ -436,10 +471,12 @@
       "grade": 87.5,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 173,
+        "forty": 4.28,
+        "arm": null,
+        "vertical": 36.0,
+        "broad_jump": 127
       },
       "peak_rank": 16,
       "projected_pick": 27,
@@ -470,8 +507,8 @@
       "grade": 86.5,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 199,
         "forty": null,
         "arm": null
       },
@@ -487,10 +524,14 @@
       "grade": 86.0,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-8",
+        "weight": 322,
+        "forty": 5.19,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 107,
+        "three_cone": 7.5,
+        "short_shuttle": 4.71
       },
       "peak_rank": 25,
       "projected_pick": 24,
@@ -504,10 +545,12 @@
       "grade": 85.5,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 205,
+        "forty": 4.34,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 136
       },
       "peak_rank": 26,
       "projected_pick": 28,
@@ -521,10 +564,12 @@
       "grade": 85.0,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 328,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 104
       },
       "peak_rank": 22
     },
@@ -536,8 +581,8 @@
       "grade": 84.5,
       "tier": 3,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 214,
         "forty": null,
         "arm": null
       },
@@ -553,10 +598,12 @@
       "grade": 84.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 165,
+        "forty": 4.21,
+        "arm": null,
+        "vertical": 41.0,
+        "broad_jump": 131
       },
       "peak_rank": 32
     },
@@ -568,10 +615,12 @@
       "grade": 83.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 285,
+        "forty": 4.95,
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 111
       },
       "peak_rank": 32,
       "projected_pick": 31,
@@ -585,10 +634,12 @@
       "grade": 83.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 311,
+        "forty": 5.04,
+        "arm": null,
+        "vertical": 28.0,
+        "broad_jump": 110
       },
       "peak_rank": 31,
       "projected_pick": 30,
@@ -602,10 +653,12 @@
       "grade": 82.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 186,
+        "forty": 4.39,
+        "arm": null,
+        "vertical": 36.0,
+        "broad_jump": 124
       },
       "peak_rank": 34,
       "projected_pick": 32,
@@ -619,10 +672,12 @@
       "grade": 82.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 326,
+        "forty": 5.04,
+        "arm": null,
+        "vertical": 28.0,
+        "broad_jump": 110
       },
       "peak_rank": 34
     },
@@ -634,8 +689,8 @@
       "grade": 81.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 313,
         "forty": null,
         "arm": null
       },
@@ -649,10 +704,12 @@
       "grade": 81.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 213,
+        "forty": 4.61,
+        "arm": null,
+        "vertical": 38.0,
+        "broad_jump": 127
       },
       "peak_rank": 19
     },
@@ -664,10 +721,12 @@
       "grade": 80.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 221,
+        "forty": 4.39,
+        "arm": null,
+        "vertical": 40.0,
+        "broad_jump": 126
       },
       "peak_rank": 39
     },
@@ -679,10 +738,11 @@
       "grade": 80.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 183,
+        "forty": 4.51,
+        "arm": null,
+        "broad_jump": 120
       },
       "peak_rank": 32
     },
@@ -694,10 +754,14 @@
       "grade": 79.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 176,
+        "forty": 4.41,
+        "arm": null,
+        "vertical": 39.0,
+        "broad_jump": 124,
+        "three_cone": 6.9,
+        "short_shuttle": 4.31
       },
       "peak_rank": 31
     },
@@ -709,10 +773,14 @@
       "grade": 79.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-9",
+        "weight": 182,
+        "forty": 4.47,
+        "arm": null,
+        "vertical": 40.0,
+        "broad_jump": 131,
+        "three_cone": 6.99,
+        "short_shuttle": 4.01
       },
       "peak_rank": 43
     },
@@ -724,10 +792,12 @@
       "grade": 78.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-8",
+        "weight": 331,
+        "forty": 5.13,
+        "arm": null,
+        "vertical": 29.0,
+        "three_cone": 7.65
       },
       "peak_rank": 43
     },
@@ -739,10 +809,12 @@
       "grade": 78.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 233,
+        "forty": 4.43,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 119
       },
       "peak_rank": 42
     },
@@ -754,10 +826,13 @@
       "grade": 77.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 292,
+        "forty": 4.78,
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 117,
+        "short_shuttle": 4.37
       },
       "peak_rank": 42
     },
@@ -769,10 +844,14 @@
       "grade": 77.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 267,
+        "forty": 4.75,
+        "arm": null,
+        "vertical": 35.5,
+        "broad_jump": 119,
+        "three_cone": 7.02,
+        "short_shuttle": 4.18
       },
       "peak_rank": 47
     },
@@ -784,10 +863,12 @@
       "grade": 76.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 230,
+        "forty": 4.51,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 118
       },
       "peak_rank": 42
     },
@@ -814,8 +895,8 @@
       "grade": 75.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 199,
         "forty": null,
         "arm": null
       },
@@ -829,10 +910,13 @@
       "grade": 75.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 299,
+        "forty": 4.91,
+        "arm": null,
+        "vertical": 30.0,
+        "broad_jump": 115,
+        "short_shuttle": 4.78
       },
       "peak_rank": 45
     },
@@ -844,10 +928,14 @@
       "grade": 74.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 189,
+        "forty": 4.41,
+        "arm": null,
+        "vertical": 42.0,
+        "broad_jump": 129,
+        "three_cone": 6.64,
+        "short_shuttle": 4.05
       },
       "peak_rank": 49
     },
@@ -859,10 +947,12 @@
       "grade": 74.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 186,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "three_cone": 6.62,
+        "short_shuttle": 4.12
       },
       "peak_rank": 29
     },
@@ -874,10 +964,12 @@
       "grade": 73.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 251,
+        "forty": 4.6,
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 115
       },
       "peak_rank": 40
     },
@@ -889,10 +981,14 @@
       "grade": 73.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 322,
+        "forty": 5.03,
+        "arm": null,
+        "vertical": 27.5,
+        "broad_jump": 109,
+        "three_cone": 7.44,
+        "short_shuttle": 4.61
       },
       "peak_rank": 43
     },
@@ -904,9 +1000,9 @@
       "grade": 72.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
+        "height": "5-11",
+        "weight": 185,
+        "forty": 4.39,
         "arm": null
       },
       "peak_rank": 50
@@ -919,10 +1015,12 @@
       "grade": 72.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 203,
+        "forty": 4.52,
+        "arm": null,
+        "vertical": 37.5,
+        "broad_jump": 129
       },
       "peak_rank": 52
     },
@@ -934,10 +1032,12 @@
       "grade": 71.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 317,
+        "forty": 5.03,
+        "arm": null,
+        "vertical": 33.0,
+        "broad_jump": 102
       },
       "peak_rank": 50
     },
@@ -949,8 +1049,8 @@
       "grade": 71.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 238,
         "forty": null,
         "arm": null
       },
@@ -964,10 +1064,12 @@
       "grade": 70.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 247,
+        "forty": 4.74,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 123
       },
       "peak_rank": 57
     },
@@ -979,10 +1081,12 @@
       "grade": 70.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 187,
+        "forty": 4.39,
+        "arm": null,
+        "vertical": 40.5,
+        "broad_jump": 136
       },
       "peak_rank": 58
     },
@@ -994,8 +1098,8 @@
       "grade": 69.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 216,
         "forty": null,
         "arm": null
       },
@@ -1009,10 +1113,11 @@
       "grade": 69.0,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 245,
+        "forty": 4.69,
+        "arm": null,
+        "short_shuttle": 4.32
       },
       "peak_rank": 49
     },
@@ -1024,10 +1129,13 @@
       "grade": 68.5,
       "tier": 4,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 308,
+        "forty": 4.92,
+        "arm": null,
+        "vertical": 30.0,
+        "broad_jump": 113,
+        "short_shuttle": 4.6
       },
       "peak_rank": 63
     },
@@ -1039,9 +1147,9 @@
       "grade": 68.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
+        "height": "5-11",
+        "weight": 198,
+        "forty": 4.47,
         "arm": null
       },
       "peak_rank": 61
@@ -1054,8 +1162,8 @@
       "grade": 67.5,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-11",
+        "weight": 215,
         "forty": null,
         "arm": null
       },
@@ -1069,8 +1177,8 @@
       "grade": 67.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 290,
         "forty": null,
         "arm": null
       },
@@ -1084,10 +1192,12 @@
       "grade": 66.5,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 294,
+        "forty": 4.89,
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 116
       },
       "peak_rank": 55
     },
@@ -1099,9 +1209,9 @@
       "grade": 66.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
+        "height": "6-4",
+        "weight": 245,
+        "forty": 4.72,
         "arm": null
       },
       "peak_rank": 24
@@ -1114,10 +1224,12 @@
       "grade": 65.5,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 216,
+        "forty": 4.39,
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 122
       },
       "peak_rank": 62
     },
@@ -1129,10 +1241,14 @@
       "grade": 65.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 211,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 37.5,
+        "broad_jump": 122,
+        "three_cone": 6.88,
+        "short_shuttle": 4.37
       },
       "peak_rank": 68
     },
@@ -1144,10 +1260,14 @@
       "grade": 64.5,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 283,
+        "forty": 4.85,
+        "arm": null,
+        "vertical": 30.5,
+        "broad_jump": 111,
+        "three_cone": 7.43,
+        "short_shuttle": 4.85
       },
       "peak_rank": 54
     },
@@ -1159,8 +1279,8 @@
       "grade": 64.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-5",
+        "weight": 323,
         "forty": null,
         "arm": null
       },
@@ -1174,10 +1294,12 @@
       "grade": 63.5,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 366,
+        "forty": 5.27,
+        "arm": null,
+        "vertical": 26.0,
+        "broad_jump": 98
       },
       "peak_rank": 43
     },
@@ -1189,10 +1311,13 @@
       "grade": 63.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-8",
+        "weight": 205,
+        "forty": 4.53,
+        "arm": null,
+        "vertical": 35.5,
+        "three_cone": 6.82,
+        "short_shuttle": 4.12
       },
       "peak_rank": 62
     },
@@ -1204,10 +1329,14 @@
       "grade": 62.5,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 211,
+        "forty": 4.95,
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 108,
+        "three_cone": 7.21,
+        "short_shuttle": 4.37
       },
       "peak_rank": 71
     },
@@ -1219,10 +1348,12 @@
       "grade": 62.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 206,
+        "forty": 4.45,
+        "arm": null,
+        "vertical": 39.0,
+        "broad_jump": 124
       },
       "peak_rank": 76
     },
@@ -1234,10 +1365,14 @@
       "grade": 61.5,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 310,
+        "forty": 5.2,
+        "arm": null,
+        "vertical": 28.0,
+        "broad_jump": 114,
+        "three_cone": 7.76,
+        "short_shuttle": 4.73
       },
       "peak_rank": 74
     },
@@ -1249,10 +1384,12 @@
       "grade": 61.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 190,
+        "forty": 4.48,
+        "arm": null,
+        "vertical": 42.0,
+        "broad_jump": 135
       },
       "peak_rank": 78
     },
@@ -1264,10 +1401,14 @@
       "grade": 60.5,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 250,
+        "forty": 4.68,
+        "arm": null,
+        "vertical": 40.0,
+        "broad_jump": 126,
+        "three_cone": 6.82,
+        "short_shuttle": 4.23
       },
       "peak_rank": 79
     },
@@ -1279,8 +1420,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 248,
         "forty": null,
         "arm": null
       },
@@ -1294,10 +1435,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 313,
+        "forty": 5.35,
+        "arm": null,
+        "vertical": 30.0,
+        "broad_jump": 107,
+        "three_cone": 7.47,
+        "short_shuttle": 4.4
       },
       "peak_rank": 61
     },
@@ -1309,10 +1454,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 197,
+        "forty": 4.47,
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 127,
+        "three_cone": 6.94,
+        "short_shuttle": 4.18
       },
       "peak_rank": 76
     },
@@ -1324,10 +1473,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 202,
+        "forty": 4.54,
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 121
       },
       "peak_rank": 83
     },
@@ -1339,10 +1490,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 193,
+        "forty": 4.36,
+        "arm": null,
+        "vertical": 40.5,
+        "broad_jump": 134
       },
       "peak_rank": 48
     },
@@ -1354,10 +1507,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 210,
+        "forty": 4.38,
+        "arm": null,
+        "vertical": 38.0,
+        "broad_jump": 134
       },
       "peak_rank": 82
     },
@@ -1369,10 +1524,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 240,
+        "forty": 4.79,
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 120
       },
       "peak_rank": 76
     },
@@ -1384,10 +1541,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 306,
+        "forty": 5.01,
+        "arm": null,
+        "vertical": 31.0,
+        "broad_jump": 108,
+        "three_cone": 7.62,
+        "short_shuttle": 4.69
       },
       "peak_rank": 58
     },
@@ -1399,10 +1560,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 196,
+        "forty": 4.45,
+        "arm": null,
+        "vertical": 38.5,
+        "broad_jump": 133
       },
       "peak_rank": 74
     },
@@ -1429,10 +1592,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 203,
+        "forty": 4.65,
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 110
       },
       "peak_rank": 28
     },
@@ -1444,9 +1609,9 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
+        "height": "6-2",
+        "weight": 188,
+        "forty": 4.48,
         "arm": null
       },
       "peak_rank": 59
@@ -1459,10 +1624,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 228,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "three_cone": 7.13,
+        "short_shuttle": 4.4
       },
       "peak_rank": 44
     },
@@ -1474,10 +1641,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 194,
+        "forty": 4.5,
+        "arm": null,
+        "vertical": 36.5,
+        "broad_jump": 133
       },
       "peak_rank": 55
     },
@@ -1489,10 +1658,11 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 179,
+        "forty": 4.44,
+        "arm": null,
+        "vertical": 33.5
       },
       "peak_rank": 81
     },
@@ -1504,10 +1674,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 314,
+        "forty": 5.13,
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 109,
+        "three_cone": 7.81,
+        "short_shuttle": 4.53
       },
       "peak_rank": 81
     },
@@ -1519,10 +1693,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 202,
+        "forty": 4.5,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 130,
+        "three_cone": 7.12,
+        "short_shuttle": 4.24
       },
       "peak_rank": 79
     },
@@ -1534,10 +1712,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 234,
+        "forty": 4.64,
+        "arm": null,
+        "vertical": 35.5,
+        "broad_jump": 120
       },
       "peak_rank": 79
     },
@@ -1549,10 +1729,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-9",
+        "weight": 220,
+        "forty": 4.46,
+        "arm": null,
+        "vertical": 36.0,
+        "broad_jump": 118
       },
       "peak_rank": 93
     },
@@ -1564,10 +1746,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 313,
+        "forty": 4.99,
+        "arm": null,
+        "vertical": 34.0,
+        "broad_jump": 114
       },
       "peak_rank": 100
     },
@@ -1579,10 +1763,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 208,
+        "forty": 4.5,
+        "arm": null,
+        "vertical": 36.5,
+        "broad_jump": 119
       },
       "peak_rank": 78
     },
@@ -1594,10 +1780,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 235,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 117
       },
       "peak_rank": 73
     },
@@ -1609,10 +1797,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 237,
+        "forty": 4.51,
+        "arm": null,
+        "vertical": 37.5,
+        "broad_jump": 127
       },
       "peak_rank": 95
     },
@@ -1624,10 +1814,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 247,
+        "forty": 4.65,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 117,
+        "short_shuttle": 4.45
       },
       "peak_rank": 83
     },
@@ -1639,10 +1832,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 309,
+        "forty": 5.08,
+        "arm": null,
+        "vertical": 35.5,
+        "broad_jump": 117,
+        "three_cone": 7.59,
+        "short_shuttle": 4.45
       },
       "peak_rank": 95
     },
@@ -1654,10 +1851,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 298,
+        "forty": 5.2,
+        "arm": null,
+        "three_cone": 7.46,
+        "short_shuttle": 4.82
       },
       "peak_rank": 60
     },
@@ -1669,10 +1868,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 248,
+        "forty": 4.57,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 123
       },
       "peak_rank": 106
     },
@@ -1684,10 +1885,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 186,
+        "forty": 4.49,
+        "arm": null,
+        "vertical": 37.5,
+        "broad_jump": 130
       },
       "peak_rank": 88
     },
@@ -1699,10 +1902,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 284,
+        "forty": 4.85,
+        "arm": null,
+        "vertical": 31.5,
+        "broad_jump": 109
       },
       "peak_rank": 73
     },
@@ -1714,10 +1919,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-10",
+        "weight": 197,
+        "forty": 4.41,
+        "arm": null,
+        "vertical": 38.0,
+        "broad_jump": 123
       },
       "peak_rank": 104
     },
@@ -1729,10 +1936,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-9",
+        "weight": 191,
+        "forty": 4.47,
+        "arm": null,
+        "vertical": 42.5,
+        "broad_jump": 126
       },
       "peak_rank": 109
     },
@@ -1744,10 +1953,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 231,
+        "forty": 4.52,
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 128,
+        "short_shuttle": 4.11
       },
       "peak_rank": 82
     },
@@ -1759,8 +1971,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 199,
         "forty": null,
         "arm": null
       },
@@ -1774,10 +1986,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 303,
+        "forty": 5.12,
+        "arm": null,
+        "vertical": 30.0,
+        "broad_jump": 109,
+        "three_cone": 7.81
       },
       "peak_rank": 30
     },
@@ -1804,10 +2019,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 305,
+        "forty": 5.04,
+        "arm": null,
+        "three_cone": 8.09,
+        "short_shuttle": 4.78
       },
       "peak_rank": 109
     },
@@ -1819,8 +2036,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-6",
+        "weight": 309,
         "forty": null,
         "arm": null
       },
@@ -1834,10 +2051,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 302,
+        "forty": 4.99,
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 109,
+        "three_cone": 7.95,
+        "short_shuttle": 4.75
       },
       "peak_rank": 89
     },
@@ -1864,10 +2085,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 217,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 36.0,
+        "broad_jump": 114,
+        "three_cone": 7.2,
+        "short_shuttle": 4.23
       },
       "peak_rank": 78
     },
@@ -1879,8 +2104,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-10",
+        "weight": 194,
         "forty": null,
         "arm": null
       },
@@ -1894,8 +2119,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-10",
+        "weight": 209,
         "forty": null,
         "arm": null
       },
@@ -1924,10 +2149,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 249,
+        "forty": 4.62,
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 118,
+        "three_cone": 7.19
       },
       "peak_rank": 123
     },
@@ -1954,10 +2182,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 252,
+        "forty": 4.64,
+        "arm": null,
+        "vertical": 37.5,
+        "broad_jump": 128
       },
       "peak_rank": 126
     },
@@ -1969,10 +2199,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 303,
+        "forty": 4.94,
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 112,
+        "three_cone": 7.16,
+        "short_shuttle": 4.28
       },
       "peak_rank": 109,
       "movement": 2
@@ -1985,10 +2219,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 247,
+        "forty": 4.68,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 123
       },
       "peak_rank": 92
     },
@@ -2000,8 +2236,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-11",
+        "weight": 206,
         "forty": null,
         "arm": null
       },
@@ -2030,10 +2266,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 190,
+        "forty": 4.38,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 129
       },
       "peak_rank": 103,
       "movement": -4
@@ -2046,10 +2284,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-10",
+        "weight": 202,
+        "forty": 4.46,
+        "arm": null,
+        "vertical": 36.0,
+        "broad_jump": 120
       },
       "peak_rank": 104
     },
@@ -2061,10 +2301,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 302,
+        "forty": 5.22,
+        "arm": null,
+        "vertical": 36.5,
+        "broad_jump": 110,
+        "three_cone": 7.47,
+        "short_shuttle": 4.57
       },
       "peak_rank": 112
     },
@@ -2076,10 +2320,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-8",
+        "weight": 168,
+        "forty": 4.38,
+        "arm": null,
+        "vertical": 36.0,
+        "broad_jump": 119,
+        "three_cone": 7.02,
+        "short_shuttle": 4.32
       },
       "peak_rank": 89
     },
@@ -2091,10 +2339,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 244,
+        "forty": 4.62,
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 120
       },
       "peak_rank": 135
     },
@@ -2106,10 +2356,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 198,
+        "forty": 4.46,
+        "arm": null,
+        "vertical": 36.0,
+        "broad_jump": 121,
+        "three_cone": 6.7,
+        "short_shuttle": 4.02
       },
       "peak_rank": 119
     },
@@ -2121,10 +2375,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 233,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 116,
+        "short_shuttle": 4.24
       },
       "peak_rank": 97
     },
@@ -2136,10 +2393,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 246,
+        "forty": 4.72,
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 119
       },
       "peak_rank": 103
     },
@@ -2151,8 +2410,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-9",
+        "weight": 190,
         "forty": null,
         "arm": null
       },
@@ -2166,8 +2425,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 317,
         "forty": null,
         "arm": null
       },
@@ -2181,10 +2440,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 188,
+        "forty": 4.46,
+        "arm": null,
+        "vertical": 34.0,
+        "broad_jump": 120,
+        "three_cone": 7.16
       },
       "peak_rank": 98
     },
@@ -2196,10 +2458,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 313,
+        "forty": 5.3,
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 106
       },
       "peak_rank": 95
     },
@@ -2211,10 +2475,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 315,
+        "forty": 5.22,
+        "arm": null,
+        "vertical": 24.5,
+        "broad_jump": 102,
+        "three_cone": 7.77,
+        "short_shuttle": 4.73
       },
       "peak_rank": 98
     },
@@ -2241,8 +2509,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 252,
         "forty": null,
         "arm": null
       },
@@ -2256,10 +2524,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 188,
+        "forty": 4.34,
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 128
       },
       "peak_rank": 140
     },
@@ -2271,10 +2541,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 216,
+        "forty": 4.58,
+        "arm": null,
+        "vertical": 36.0,
+        "broad_jump": 117
       },
       "peak_rank": 124
     },
@@ -2286,10 +2558,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 228,
+        "forty": 4.55,
+        "arm": null,
+        "vertical": 35.5,
+        "broad_jump": 124
       },
       "peak_rank": 148
     },
@@ -2301,10 +2575,11 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 190,
+        "forty": 4.36,
+        "arm": null,
+        "vertical": 34.5
       },
       "peak_rank": 117
     },
@@ -2316,10 +2591,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 326,
+        "forty": 5.26,
+        "arm": null,
+        "vertical": 23.0,
+        "broad_jump": 106
       },
       "peak_rank": 71
     },
@@ -2331,10 +2608,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 241,
+        "forty": 4.61,
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 124
       },
       "peak_rank": 97
     },
@@ -2346,10 +2625,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 314,
+        "forty": 5.15,
+        "arm": null,
+        "vertical": 31.0,
+        "broad_jump": 116
       },
       "peak_rank": 131
     },
@@ -2361,10 +2642,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 209,
+        "forty": 4.48,
+        "arm": null,
+        "vertical": 40.0,
+        "broad_jump": 124,
+        "three_cone": 6.81,
+        "short_shuttle": 4.06
       },
       "peak_rank": 150
     },
@@ -2376,10 +2661,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 185,
+        "forty": 4.44,
+        "arm": null,
+        "vertical": 42.5,
+        "broad_jump": 131
       },
       "peak_rank": 135
     },
@@ -2391,10 +2678,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 190,
+        "forty": 4.51,
+        "arm": null,
+        "vertical": 34.0,
+        "broad_jump": 124,
+        "short_shuttle": 4.15
       },
       "peak_rank": 64
     },
@@ -2406,10 +2696,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 240,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 121
       },
       "peak_rank": 75
     },
@@ -2421,10 +2713,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 221,
+        "forty": 4.33,
+        "arm": null,
+        "vertical": 41.5,
+        "broad_jump": 129,
+        "three_cone": 6.94,
+        "short_shuttle": 4.15
       },
       "peak_rank": 141,
       "movement": -2
@@ -2437,10 +2733,11 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 297,
+        "forty": 5.18,
+        "arm": null,
+        "vertical": 28.0
       },
       "peak_rank": 115
     },
@@ -2452,9 +2749,9 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
+        "height": "6-2",
+        "weight": 234,
+        "forty": 4.64,
         "arm": null
       },
       "peak_rank": 121
@@ -2467,10 +2764,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 210,
+        "forty": 4.62,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 125
       },
       "peak_rank": 113
     },
@@ -2482,10 +2781,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 302,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 26.5,
+        "broad_jump": 111
       },
       "peak_rank": 134
     },
@@ -2497,10 +2798,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 301,
+        "forty": 5.02,
+        "arm": null,
+        "vertical": 28.5,
+        "broad_jump": 108,
+        "short_shuttle": 5.0
       },
       "peak_rank": 93
     },
@@ -2512,10 +2816,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 241,
+        "forty": 4.58,
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 124
       },
       "peak_rank": 82
     },
@@ -2527,10 +2833,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 315,
+        "forty": 5.21,
+        "arm": null,
+        "vertical": 25.5,
+        "broad_jump": 104
       },
       "peak_rank": 112
     },
@@ -2542,10 +2850,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 191,
+        "forty": 4.61,
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 122,
+        "short_shuttle": 4.16
       },
       "peak_rank": 37
     },
@@ -2557,10 +2868,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-5",
+        "weight": 235,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 121
       },
       "peak_rank": 132
     },
@@ -2572,8 +2885,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 203,
         "forty": null,
         "arm": null
       },
@@ -2587,10 +2900,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 179,
+        "forty": 4.45,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 133
       },
       "peak_rank": 122
     },
@@ -2602,10 +2917,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 236,
+        "forty": 4.56,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 128
       },
       "peak_rank": 152
     },
@@ -2617,10 +2934,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 271,
+        "forty": 4.64,
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 121,
+        "three_cone": 7.02,
+        "short_shuttle": 4.26
       },
       "peak_rank": 144
     },
@@ -2632,10 +2953,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-10",
+        "weight": 206,
+        "forty": 4.54,
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 118,
+        "three_cone": 6.84,
+        "short_shuttle": 4.02
       },
       "peak_rank": 145
     },
@@ -2647,10 +2972,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 319,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 26.0,
+        "broad_jump": 104
       },
       "peak_rank": 140
     },
@@ -2677,8 +3004,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-6",
+        "weight": 313,
         "forty": null,
         "arm": null
       },
@@ -2692,10 +3019,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-10",
+        "weight": 174,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 122
       },
       "peak_rank": 131
     },
@@ -2707,10 +3036,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 260,
+        "forty": 4.63,
+        "arm": null,
+        "vertical": 38.0,
+        "broad_jump": 122
       },
       "peak_rank": 95
     },
@@ -2722,10 +3053,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 313,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 31.0,
+        "broad_jump": 104
       },
       "peak_rank": 128
     },
@@ -2737,10 +3070,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 244,
+        "forty": 4.61,
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 117
       },
       "peak_rank": 178
     },
@@ -2752,10 +3087,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 264,
+        "forty": 4.69,
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 114
       },
       "peak_rank": 138
     },
@@ -2767,8 +3104,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 200,
         "forty": null,
         "arm": null
       },
@@ -2782,10 +3119,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 212,
+        "forty": 4.44,
+        "arm": null,
+        "vertical": 37.5,
+        "broad_jump": 127
       },
       "peak_rank": 172
     },
@@ -2797,10 +3136,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-10",
+        "weight": 184,
+        "forty": 4.54,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 125,
+        "three_cone": 7.05,
+        "short_shuttle": 4.32
       },
       "peak_rank": 119
     },
@@ -2812,10 +3155,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 185,
+        "forty": 4.47,
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 115
       },
       "peak_rank": 144
     },
@@ -2842,10 +3187,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 241,
+        "forty": 4.78,
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 122,
+        "three_cone": 6.83,
+        "short_shuttle": 4.21
       },
       "peak_rank": 141
     },
@@ -2857,10 +3206,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-8",
+        "weight": 213,
+        "forty": 4.46,
+        "arm": null,
+        "vertical": 37.5,
+        "broad_jump": 120,
+        "three_cone": 7.01,
+        "short_shuttle": 4.15
       },
       "peak_rank": 167
     },
@@ -2887,10 +3240,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 195,
+        "forty": 4.5,
+        "arm": null,
+        "vertical": 35.5,
+        "broad_jump": 118,
+        "three_cone": 6.88,
+        "short_shuttle": 3.98
       },
       "peak_rank": 157
     },
@@ -2902,10 +3259,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 324,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 26.5,
+        "broad_jump": 104
       },
       "peak_rank": 115
     },
@@ -2917,8 +3276,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 231,
         "forty": null,
         "arm": null
       },
@@ -2932,10 +3291,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 231,
+        "forty": 4.65,
+        "arm": null,
+        "vertical": 30.0,
+        "broad_jump": 117
       },
       "peak_rank": 107
     },
@@ -2947,10 +3308,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 215,
+        "forty": 4.51,
+        "arm": null,
+        "vertical": 39.0,
+        "broad_jump": 122,
+        "three_cone": 6.83,
+        "short_shuttle": 4.14
       },
       "peak_rank": 172
     },
@@ -2962,10 +3327,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 310,
+        "forty": 5.24,
+        "arm": null,
+        "vertical": 30.5,
+        "broad_jump": 107
       },
       "peak_rank": 154
     },
@@ -2992,10 +3359,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-8",
+        "weight": 174,
+        "forty": 4.39,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 129,
+        "short_shuttle": 4.16
       },
       "peak_rank": 185
     },
@@ -3007,10 +3377,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 254,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 31.0,
+        "three_cone": 7.3,
+        "short_shuttle": 4.57
       },
       "peak_rank": 104
     },
@@ -3022,10 +3395,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 250,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 118
       },
       "peak_rank": 131
     },
@@ -3037,8 +3412,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-5",
+        "weight": 257,
         "forty": null,
         "arm": null
       },
@@ -3052,10 +3427,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 218,
+        "forty": 4.57,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 119
       },
       "peak_rank": 147
     },
@@ -3082,8 +3459,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 223,
         "forty": null,
         "arm": null
       },
@@ -3113,10 +3490,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 332,
+        "forty": 5.19,
+        "arm": null,
+        "vertical": 25.0,
+        "broad_jump": 107,
+        "three_cone": 8.01
       },
       "peak_rank": 179
     },
@@ -3128,10 +3508,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 278,
+        "forty": 4.67,
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 120
       },
       "peak_rank": 116,
       "movement": -2
@@ -3144,8 +3526,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-11",
+        "weight": 206,
         "forty": null,
         "arm": null
       },
@@ -3159,10 +3541,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 233,
+        "forty": 4.63,
+        "arm": null,
+        "vertical": 31.0,
+        "broad_jump": 111
       },
       "peak_rank": 175
     },
@@ -3174,10 +3558,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 226,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 112,
+        "three_cone": 7.13,
+        "short_shuttle": 4.23
       },
       "peak_rank": 149
     },
@@ -3189,10 +3577,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 299,
+        "forty": 5.1,
+        "arm": null,
+        "vertical": 33.0,
+        "broad_jump": 115,
+        "three_cone": 7.26,
+        "short_shuttle": 4.33
       },
       "peak_rank": 165
     },
@@ -3204,10 +3596,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-9",
+        "weight": 188,
+        "forty": 4.42,
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 118
       },
       "peak_rank": 183
     },
@@ -3219,10 +3613,11 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-9",
+        "weight": 202,
+        "forty": 4.61,
+        "arm": null,
+        "vertical": 33.0
       },
       "peak_rank": 167
     },
@@ -3234,10 +3629,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 301,
+        "forty": 4.97,
+        "arm": null,
+        "vertical": 29.5,
+        "broad_jump": 105,
+        "short_shuttle": 4.66
       },
       "peak_rank": 182,
       "movement": 2
@@ -3250,10 +3648,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 233,
+        "forty": 4.63,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 119,
+        "three_cone": 7.25,
+        "short_shuttle": 4.4
       },
       "peak_rank": 161,
       "movement": 3
@@ -3266,10 +3668,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 212,
+        "forty": 4.43,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 122
       },
       "peak_rank": 188
     },
@@ -3281,8 +3685,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 314,
         "forty": null,
         "arm": null
       },
@@ -3296,8 +3700,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 196,
         "forty": null,
         "arm": null
       },
@@ -3327,10 +3731,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 208,
+        "forty": 4.57,
+        "arm": null,
+        "vertical": 42.5,
+        "broad_jump": 128
       },
       "peak_rank": 217
     },
@@ -3342,10 +3748,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 281,
+        "forty": 5.05,
+        "arm": null,
+        "vertical": 31.5,
+        "broad_jump": 114,
+        "three_cone": 7.16,
+        "short_shuttle": 4.37
       },
       "peak_rank": 196
     },
@@ -3357,10 +3767,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 199,
+        "forty": 4.55,
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 121
       },
       "peak_rank": 130,
       "movement": -2
@@ -3373,10 +3785,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-9",
+        "weight": 182,
+        "forty": 4.63,
+        "arm": null,
+        "vertical": 38.0,
+        "broad_jump": 123,
+        "three_cone": 6.75
       },
       "peak_rank": 175
     },
@@ -3388,10 +3803,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 208,
+        "forty": 4.53,
+        "arm": null,
+        "vertical": 40.5,
+        "broad_jump": 125,
+        "three_cone": 6.82,
+        "short_shuttle": 4.13
       },
       "peak_rank": 195
     },
@@ -3403,10 +3822,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 202,
+        "forty": 4.44,
+        "arm": null,
+        "vertical": 39.5,
+        "broad_jump": 132
       },
       "peak_rank": 184
     },
@@ -3418,10 +3839,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 286,
+        "forty": 5.06,
+        "arm": null,
+        "vertical": 29.5,
+        "broad_jump": 103
       },
       "peak_rank": 179
     },
@@ -3433,10 +3856,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 296,
+        "forty": 5.15,
+        "arm": null,
+        "vertical": 28.5,
+        "broad_jump": 105
       },
       "peak_rank": 117
     },
@@ -3448,10 +3873,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 217,
+        "forty": 4.68,
+        "arm": null,
+        "vertical": 31.5,
+        "broad_jump": 117
       },
       "peak_rank": 152
     },
@@ -3463,8 +3890,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-8",
+        "weight": 313,
         "forty": null,
         "arm": null
       },
@@ -3478,8 +3905,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 187,
         "forty": null,
         "arm": null
       },
@@ -3493,10 +3920,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 309,
+        "forty": 5.2,
+        "arm": null,
+        "vertical": 28.5,
+        "broad_jump": 106,
+        "short_shuttle": 4.81
       },
       "peak_rank": 158
     },
@@ -3508,10 +3938,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 274,
+        "forty": 4.67,
+        "arm": null,
+        "vertical": 36.5,
+        "broad_jump": 117,
+        "three_cone": 7.59,
+        "short_shuttle": 4.73
       },
       "peak_rank": 203
     },
@@ -3523,8 +3957,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-11",
+        "weight": 233,
         "forty": null,
         "arm": null
       },
@@ -3553,10 +3987,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 301,
+        "forty": 5.03,
+        "arm": null,
+        "vertical": 31.0,
+        "broad_jump": 111
       },
       "peak_rank": 232
     },
@@ -3583,10 +4019,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 298,
+        "forty": 5.23,
+        "arm": null,
+        "vertical": 29.5,
+        "broad_jump": 101,
+        "three_cone": 7.33,
+        "short_shuttle": 4.5
       },
       "peak_rank": 122
     },
@@ -3598,10 +4038,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 200,
+        "forty": 4.6,
+        "arm": null,
+        "vertical": 40.5,
+        "broad_jump": 126
       },
       "peak_rank": 177
     },
@@ -3613,8 +4055,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-10",
+        "weight": 221,
         "forty": null,
         "arm": null
       },
@@ -3628,10 +4070,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 225,
+        "forty": 4.7,
+        "arm": null,
+        "vertical": 36.5,
+        "broad_jump": 117
       },
       "peak_rank": 222
     },
@@ -3643,10 +4087,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 216,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 41.0,
+        "broad_jump": 146
       },
       "peak_rank": 223
     },
@@ -3658,10 +4104,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-9",
+        "weight": 179,
+        "forty": 4.38,
+        "arm": null,
+        "vertical": 42.5,
+        "broad_jump": 126
       },
       "peak_rank": 167
     },
@@ -3673,10 +4121,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 195,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 35.0,
+        "broad_jump": 119
       },
       "peak_rank": 131
     },
@@ -3688,10 +4138,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 239,
+        "forty": 4.66,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 127
       },
       "peak_rank": 228
     },
@@ -3718,8 +4170,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 205,
         "forty": null,
         "arm": null
       },
@@ -3748,10 +4200,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-7",
+        "weight": 260,
+        "forty": 4.77,
+        "arm": null,
+        "vertical": 31.5,
+        "broad_jump": 116,
+        "three_cone": 7.38
       },
       "peak_rank": 159
     },
@@ -3763,8 +4218,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-1",
+        "weight": 215,
         "forty": null,
         "arm": null
       },
@@ -3778,10 +4233,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-8",
+        "weight": 313,
+        "forty": 4.94,
+        "arm": null,
+        "vertical": 31.5,
+        "broad_jump": 114,
+        "three_cone": 7.39,
+        "short_shuttle": 4.73
       },
       "peak_rank": 176
     },
@@ -3793,10 +4252,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 311,
+        "forty": 5.22,
+        "arm": null,
+        "vertical": 38.5,
+        "broad_jump": 113,
+        "three_cone": 7.76,
+        "short_shuttle": 4.85
       },
       "peak_rank": 175
     },
@@ -3823,10 +4286,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 195,
+        "forty": 4.55,
+        "arm": null,
+        "vertical": 37.0,
+        "broad_jump": 116
       },
       "peak_rank": 218
     },
@@ -3838,8 +4303,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 244,
         "forty": null,
         "arm": null
       },
@@ -3868,8 +4333,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 207,
         "forty": null,
         "arm": null
       },
@@ -3883,10 +4348,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 306,
+        "forty": 4.95,
+        "arm": null,
+        "vertical": 36.5,
+        "broad_jump": 117
       },
       "peak_rank": 203
     },
@@ -3928,8 +4395,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 309,
         "forty": null,
         "arm": null
       },
@@ -3943,8 +4410,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 304,
         "forty": null,
         "arm": null
       },
@@ -3958,10 +4425,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 300,
+        "forty": 5.0,
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 115
       },
       "peak_rank": 200
     },
@@ -3973,10 +4442,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 189,
+        "forty": 4.52,
+        "arm": null,
+        "vertical": 38.0,
+        "broad_jump": 120
       },
       "peak_rank": 234
     },
@@ -3988,9 +4459,9 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
+        "height": "6-0",
+        "weight": 191,
+        "forty": 4.46,
         "arm": null
       },
       "peak_rank": 195
@@ -4003,10 +4474,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 211,
+        "forty": 4.8,
+        "arm": null,
+        "vertical": 28.5,
+        "broad_jump": 109,
+        "three_cone": 7.19,
+        "short_shuttle": 4.34
       },
       "peak_rank": 183
     },
@@ -4048,8 +4523,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-6",
+        "weight": 312,
         "forty": null,
         "arm": null
       },
@@ -4063,9 +4538,9 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
+        "height": "6-2",
+        "weight": 220,
+        "forty": 4.82,
         "arm": null
       },
       "peak_rank": 208
@@ -4078,10 +4553,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-10",
+        "weight": 181,
+        "forty": 4.43,
+        "arm": null,
+        "vertical": 35.5,
+        "broad_jump": 124,
+        "three_cone": 7.0,
+        "short_shuttle": 4.35
       },
       "peak_rank": 226
     },
@@ -4093,10 +4572,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 183,
+        "forty": 4.38,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 125
       },
       "peak_rank": 233
     },
@@ -4108,8 +4589,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-5",
+        "weight": 301,
         "forty": null,
         "arm": null
       },
@@ -4124,10 +4605,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 227,
+        "forty": 4.5,
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 125
       },
       "peak_rank": 184
     },
@@ -4169,10 +4652,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-2",
+        "weight": 225,
+        "forty": 4.62,
+        "arm": null,
+        "vertical": 35.5,
+        "broad_jump": 124,
+        "short_shuttle": 4.38
       },
       "peak_rank": 218
     },
@@ -4184,10 +4670,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 330,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 24.5,
+        "broad_jump": 99,
+        "short_shuttle": 4.87
       },
       "peak_rank": 185
     },
@@ -4199,8 +4688,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 169,
         "forty": null,
         "arm": null
       },
@@ -4229,8 +4718,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 255,
         "forty": null,
         "arm": null
       },
@@ -4259,10 +4748,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-8",
+        "weight": 187,
+        "forty": 4.45,
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 117
       },
       "peak_rank": 195,
       "movement": -3
@@ -4275,10 +4766,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 231,
+        "forty": 4.75,
+        "arm": null,
+        "vertical": 30.0,
+        "broad_jump": 117
       },
       "peak_rank": 198
     },
@@ -4290,10 +4783,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-7",
+        "weight": 202,
+        "forty": 4.61,
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 116
       },
       "peak_rank": 165
     },
@@ -4305,8 +4800,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-9",
+        "weight": 229,
         "forty": null,
         "arm": null
       },
@@ -4320,9 +4815,9 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
+        "height": "5-10",
+        "weight": 193,
+        "forty": 4.56,
         "arm": null
       },
       "peak_rank": 145
@@ -4335,10 +4830,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 308,
+        "forty": 5.01,
+        "arm": null,
+        "vertical": 26.5,
+        "broad_jump": 112
       },
       "peak_rank": 266
     },
@@ -4381,10 +4878,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 223,
+        "forty": 4.55,
+        "arm": null,
+        "vertical": 30.0,
+        "broad_jump": 118
       },
       "peak_rank": 213
     },
@@ -4411,9 +4910,9 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
+        "height": "6-3",
+        "weight": 231,
+        "forty": 4.47,
         "arm": null
       },
       "peak_rank": 249
@@ -4426,10 +4925,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 314,
+        "forty": 5.42,
+        "arm": null,
+        "vertical": 24.5,
+        "broad_jump": 95
       },
       "peak_rank": 124
     },
@@ -4441,10 +4942,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 303,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 31.0,
+        "broad_jump": 109,
+        "three_cone": 7.88,
+        "short_shuttle": 4.62
       },
       "peak_rank": 202
     },
@@ -4471,10 +4976,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 190,
+        "forty": 4.46,
+        "arm": null,
+        "vertical": 40.5,
+        "broad_jump": 129
       },
       "peak_rank": 205
     },
@@ -4486,10 +4993,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 240,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 32.5,
+        "broad_jump": 121,
+        "three_cone": 7.09,
+        "short_shuttle": 4.54
       },
       "peak_rank": 169,
       "movement": -2
@@ -4502,10 +5013,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 314,
+        "forty": 5.14,
+        "arm": null,
+        "vertical": 29.0,
+        "broad_jump": 109,
+        "short_shuttle": 4.92
       },
       "peak_rank": 210
     },
@@ -4517,8 +5031,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 235,
         "forty": null,
         "arm": null
       },
@@ -4532,10 +5046,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 308,
+        "forty": 5.09,
+        "arm": null,
+        "vertical": 29.5,
+        "broad_jump": 108
       },
       "peak_rank": 293
     },
@@ -4547,10 +5063,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 246,
+        "forty": 4.79,
+        "arm": null,
+        "vertical": 34.0,
+        "broad_jump": 117
       },
       "peak_rank": 186
     },
@@ -4562,8 +5080,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-5",
+        "weight": 260,
         "forty": null,
         "arm": null
       },
@@ -4592,10 +5110,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 305,
+        "forty": 5.17,
+        "arm": null,
+        "vertical": 27.0,
+        "broad_jump": 109,
+        "three_cone": 7.78,
+        "short_shuttle": 4.87
       },
       "peak_rank": 261
     },
@@ -4652,10 +5174,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-2",
+        "weight": 236,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 32.0,
+        "broad_jump": 111
       },
       "peak_rank": 201
     },
@@ -4667,8 +5191,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 243,
         "forty": null,
         "arm": null
       },
@@ -4682,10 +5206,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-7",
+        "weight": 315,
+        "forty": 5.36,
+        "arm": null,
+        "vertical": 25.5,
+        "broad_jump": 94,
+        "three_cone": 7.95,
+        "short_shuttle": 4.93
       },
       "peak_rank": 163
     },
@@ -4697,8 +5225,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-11",
+        "weight": 173,
         "forty": null,
         "arm": null
       },
@@ -4712,10 +5240,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-10",
+        "weight": 208,
+        "forty": 4.52,
+        "arm": null,
+        "vertical": 39.0,
+        "broad_jump": 127,
+        "short_shuttle": 4.33
       },
       "peak_rank": 264
     },
@@ -4727,10 +5258,11 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-8",
+        "weight": 353,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 27.5
       },
       "peak_rank": 206
     },
@@ -4742,10 +5274,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 210,
+        "forty": 4.47,
+        "arm": null,
+        "vertical": 30.5,
+        "broad_jump": 119
       },
       "peak_rank": 257
     },
@@ -4772,8 +5306,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 241,
         "forty": null,
         "arm": null
       },
@@ -4803,8 +5337,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 307,
         "forty": null,
         "arm": null
       },
@@ -4833,10 +5367,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 306,
+        "forty": 5.21,
+        "arm": null,
+        "vertical": 29.5,
+        "broad_jump": 111,
+        "three_cone": 7.83,
+        "short_shuttle": 4.7
       },
       "peak_rank": 292
     },
@@ -4863,8 +5401,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-6",
+        "weight": 329,
         "forty": null,
         "arm": null
       },
@@ -4878,10 +5416,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 306,
+        "forty": 5.02,
+        "arm": null,
+        "vertical": 31.5,
+        "broad_jump": 111,
+        "three_cone": 7.53,
+        "short_shuttle": 4.47
       },
       "peak_rank": 292
     },
@@ -4893,8 +5435,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-11",
+        "weight": 191,
         "forty": null,
         "arm": null
       },
@@ -4908,10 +5450,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 266,
+        "forty": 4.69,
+        "arm": null,
+        "vertical": 31.5,
+        "broad_jump": 120
       },
       "peak_rank": 224
     },
@@ -4938,10 +5482,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 321,
+        "forty": 5.38,
+        "arm": null,
+        "vertical": 29.5,
+        "broad_jump": 101,
+        "three_cone": 7.95,
+        "short_shuttle": 4.9
       },
       "peak_rank": 201
     },
@@ -4953,8 +5501,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 229,
         "forty": null,
         "arm": null
       },
@@ -4968,10 +5516,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 210,
+        "forty": 4.6,
+        "arm": null,
+        "vertical": 31.0,
+        "broad_jump": 116
       },
       "peak_rank": 167,
       "movement": -2
@@ -4999,10 +5549,11 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-4",
+        "weight": 250,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 31.5
       },
       "peak_rank": 202
     },
@@ -5059,10 +5610,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 232,
+        "forty": 4.73,
+        "arm": null,
+        "vertical": 31.5,
+        "broad_jump": 109
       },
       "peak_rank": 280
     },
@@ -5104,8 +5657,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-3",
+        "weight": 208,
         "forty": null,
         "arm": null
       },
@@ -5119,10 +5672,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-11",
+        "weight": 210,
+        "forty": 4.51,
+        "arm": null,
+        "vertical": 33.5,
+        "broad_jump": 119,
+        "short_shuttle": 4.43
       },
       "peak_rank": 199
     },
@@ -5134,10 +5690,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-11",
+        "weight": 185,
         "forty": null,
-        "arm": null
+        "arm": null,
+        "vertical": 34.5,
+        "broad_jump": 120,
+        "short_shuttle": 4.35
       },
       "peak_rank": 236
     },
@@ -5164,10 +5723,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-1",
+        "weight": 208,
+        "forty": 4.6,
+        "arm": null,
+        "vertical": 36.5,
+        "broad_jump": 130
       },
       "peak_rank": 294
     },
@@ -5209,10 +5770,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 203,
+        "forty": 4.47,
+        "arm": null,
+        "vertical": 36.0,
+        "broad_jump": 126
       },
       "peak_rank": 296
     },
@@ -5284,10 +5847,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "5-8",
+        "weight": 191,
+        "forty": 4.42,
+        "arm": null,
+        "vertical": 33.0,
+        "broad_jump": 125
       },
       "peak_rank": 229
     },
@@ -5359,10 +5924,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 304,
+        "forty": 5.31,
+        "arm": null,
+        "vertical": 29.0,
+        "broad_jump": 110,
+        "three_cone": 7.57,
+        "short_shuttle": 4.47
       },
       "peak_rank": 346
     },
@@ -5434,10 +6003,12 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-6",
+        "weight": 343,
+        "forty": 5.64,
+        "arm": null,
+        "vertical": 28.0,
+        "broad_jump": 100
       },
       "peak_rank": 241
     },
@@ -5509,8 +6080,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "6-0",
+        "weight": 201,
         "forty": null,
         "arm": null
       },
@@ -5690,10 +6261,13 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-4",
+        "weight": 316,
+        "forty": 5.21,
+        "arm": null,
+        "vertical": 28.0,
+        "broad_jump": 103,
+        "three_cone": 8.19
       },
       "peak_rank": 259
     },
@@ -5765,10 +6339,14 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-3",
+        "weight": 322,
+        "forty": 5.5,
+        "arm": null,
+        "vertical": 24.0,
+        "broad_jump": 96,
+        "three_cone": 8.26,
+        "short_shuttle": 4.97
       },
       "peak_rank": 196
     },
@@ -5795,10 +6373,11 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-5",
+        "weight": 322,
+        "forty": 5.34,
+        "arm": null,
+        "vertical": 30.0
       },
       "peak_rank": 277
     },
@@ -5855,8 +6434,8 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
+        "height": "5-11",
+        "weight": 184,
         "forty": null,
         "arm": null
       },
@@ -6185,10 +6764,11 @@
       "grade": 60.0,
       "tier": 5,
       "measurables": {
-        "height": null,
-        "weight": null,
-        "forty": null,
-        "arm": null
+        "height": "6-0",
+        "weight": 229,
+        "forty": 4.91,
+        "arm": null,
+        "short_shuttle": 4.66
       },
       "peak_rank": 254
     },

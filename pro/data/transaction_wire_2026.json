@@ -1,9 +1,1195 @@
 {
   "_description": "2026 NFL Draft transaction wire. Tracks eligibility declarations, withdrawals, medical retirements, and transfer notes. Status values: declared | withdrew | medical_retirement | transferred | undeclared.",
   "draft_year": 2026,
-  "last_updated": "2026-03-27",
-  "_populate_instructions": "Add entries here from NFL.com team official sites, beat reporters, and player social media after the 2025 CFB season (Jan 2026). Verify each entry before adding — do not generate from model knowledge.",
+  "last_updated": "2026-04-16",
+  "_populate_instructions": "Add entries here from NFL.com team official sites, beat reporters, and player social media after the 2025 CFB season (Jan 2026). Verify each entry before adding \u2014 do not generate from model knowledge.",
   "entries": [
-    {"name": "Arch Manning",        "position": "QB",   "school": "Texas",         "status": "withdrew",           "date": "2025-12-01", "notes": "Announced return to Texas for 2026 season. Not entering 2026 draft.", "source": "Texas Athletics / ESPN"}
-  ]
+    {
+      "name": "Arch Manning",
+      "position": "QB",
+      "school": "Texas",
+      "status": "withdrew",
+      "date": "2025-12-01",
+      "notes": "Announced return to Texas for 2026 season. Not entering 2026 draft.",
+      "source": "Texas Athletics / ESPN"
+    },
+    {
+      "name": "Chiefs Host",
+      "position": "",
+      "school": "",
+      "status": "declared",
+      "date": "Tue, 07 Apr 2026 19:18:41 GMT",
+      "notes": "Chiefs Host 37 Area Prospects for Annual \"Local Pro Day\" at the Team Facility",
+      "source": "chiefs-news",
+      "source_url": "https://www.chiefs.com/news/chiefs-host-37-area-prospects-for-annual-local-pro-day-at-the-team-facility",
+      "confidence": 0.94,
+      "ingested_at": "2026-04-16 01:55 UTC"
+    },
+    {
+      "name": "Matt Miller",
+      "position": "",
+      "school": "",
+      "status": "declared",
+      "date": "2026-04-16",
+      "notes": "Latest NFL draft buzz: What we're hearing on Jermod McCoy's pro day, the QB3 debate How did Jermod McCoy perform at his pro day? Who is the third-best QB in this class? Our NFL draft experts weigh in with new intel three weeks out. 13d Matt Miller and Field Yates",
+      "source": "espn-nfl-draft",
+      "source_url": "https://www.espn.com/nfl/draft2026/story/_/id/48377191/2026-nfl-draft-latest-buzz-rumors-news-mocks-sleepers-mccoy-nussmeier-beck",
+      "confidence": 0.85,
+      "ingested_at": "2026-04-16 01:54 UTC"
+    },
+    {
+      "name": "Stephon Gilmore",
+      "position": "",
+      "school": "",
+      "status": "medical_retirement",
+      "date": "2026-04-16",
+      "notes": "Stephon Gilmore retires after 13-year, Super Bowl champion career",
+      "source": "team-buf-cbs",
+      "source_url": "https://www.cbssports.com/nfl/news/stephon-gilmore-retires-patriots/",
+      "confidence": 0.85,
+      "ingested_at": "2026-04-16 01:55 UTC"
+    }
+  ],
+  "_ingest": {
+    "generated_at": "2026-04-16 02:52 UTC",
+    "source_group": "all",
+    "num_sources_attempted": 80,
+    "num_events_discovered": 5,
+    "num_events_total": 4,
+    "num_seed_sources_loaded": 6,
+    "num_degraded_sources": 0,
+    "degraded_sources": [],
+    "playwright": {
+      "ok": false,
+      "reason": "playwright_browser_missing",
+      "error": "BrowserType.launch: Executable doesn't exist at /Users/v/Library/Caches/ms-playwright/chromium_headless_shell-1194/chrome-mac/headless_shell\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Pla"
+    },
+    "source_stats": [
+      {
+        "source": "nfl-news",
+        "kind": "rss",
+        "rows_found": 0,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      },
+      {
+        "source": "nfl-combine-pro-days",
+        "kind": "html",
+        "rows_found": 136,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "chiefs-news",
+        "kind": "rss",
+        "rows_found": 20,
+        "events_added": 1,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "eagles-news",
+        "kind": "rss",
+        "rows_found": 0,
+        "events_added": 0,
+        "note": "fetch_failed",
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      },
+      {
+        "source": "espn-nfl-draft",
+        "kind": "html",
+        "rows_found": 49,
+        "events_added": 1,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "espn-mel-kiper-mocks",
+        "kind": "html",
+        "rows_found": 6,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "espn-bill-barnwell-draft",
+        "kind": "html",
+        "rows_found": 6,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "cbs-nfl-draft",
+        "kind": "html",
+        "rows_found": 68,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "nfl-draft-tracker-prospects",
+        "kind": "nfl_draft_tracker",
+        "rows_found": 0,
+        "events_added": 0,
+        "note": "fetch_failed",
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      },
+      {
+        "source": "nfl-combine-tracker-participants",
+        "kind": "nfl_combine_tracker",
+        "rows_found": 0,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": "playwright_browser_missing",
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-ari-espn",
+        "kind": "html",
+        "rows_found": 35,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-ari-cbs",
+        "kind": "html",
+        "rows_found": 124,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-atl-espn",
+        "kind": "html",
+        "rows_found": 86,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-atl-cbs",
+        "kind": "html",
+        "rows_found": 122,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-bal-espn",
+        "kind": "html",
+        "rows_found": 27,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-bal-cbs",
+        "kind": "html",
+        "rows_found": 124,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-buf-espn",
+        "kind": "html",
+        "rows_found": 86,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-buf-cbs",
+        "kind": "html",
+        "rows_found": 126,
+        "events_added": 1,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-car-espn",
+        "kind": "html",
+        "rows_found": 86,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-car-cbs",
+        "kind": "html",
+        "rows_found": 124,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-chi-espn",
+        "kind": "html",
+        "rows_found": 37,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-chi-cbs",
+        "kind": "html",
+        "rows_found": 127,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-cin-espn",
+        "kind": "html",
+        "rows_found": 86,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-cin-cbs",
+        "kind": "html",
+        "rows_found": 125,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-cle-espn",
+        "kind": "html",
+        "rows_found": 43,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-cle-cbs",
+        "kind": "html",
+        "rows_found": 127,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-dal-espn",
+        "kind": "html",
+        "rows_found": 27,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-dal-cbs",
+        "kind": "html",
+        "rows_found": 125,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-den-espn",
+        "kind": "html",
+        "rows_found": 30,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-den-cbs",
+        "kind": "html",
+        "rows_found": 123,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-det-espn",
+        "kind": "html",
+        "rows_found": 86,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-det-cbs",
+        "kind": "html",
+        "rows_found": 125,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-gb-espn",
+        "kind": "html",
+        "rows_found": 30,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-gb-cbs",
+        "kind": "html",
+        "rows_found": 125,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-hou-espn",
+        "kind": "html",
+        "rows_found": 85,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-hou-cbs",
+        "kind": "html",
+        "rows_found": 123,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-ind-espn",
+        "kind": "html",
+        "rows_found": 87,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-ind-cbs",
+        "kind": "html",
+        "rows_found": 122,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-jac-espn",
+        "kind": "html",
+        "rows_found": 85,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-jac-cbs",
+        "kind": "html",
+        "rows_found": 124,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-kc-espn",
+        "kind": "html",
+        "rows_found": 37,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-kc-cbs",
+        "kind": "html",
+        "rows_found": 125,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-lac-espn",
+        "kind": "html",
+        "rows_found": 85,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-lac-cbs",
+        "kind": "html",
+        "rows_found": 127,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-lar-espn",
+        "kind": "html",
+        "rows_found": 86,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-lar-cbs",
+        "kind": "html",
+        "rows_found": 127,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-lv-espn",
+        "kind": "html",
+        "rows_found": 84,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-lv-cbs",
+        "kind": "html",
+        "rows_found": 122,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-mia-espn",
+        "kind": "html",
+        "rows_found": 41,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-mia-cbs",
+        "kind": "html",
+        "rows_found": 123,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-min-espn",
+        "kind": "html",
+        "rows_found": 87,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-min-cbs",
+        "kind": "html",
+        "rows_found": 122,
+        "events_added": 1,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-ne-espn",
+        "kind": "html",
+        "rows_found": 43,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-ne-cbs",
+        "kind": "html",
+        "rows_found": 130,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-no-espn",
+        "kind": "html",
+        "rows_found": 87,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-no-cbs",
+        "kind": "html",
+        "rows_found": 123,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-nyg-espn",
+        "kind": "html",
+        "rows_found": 83,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-nyg-cbs",
+        "kind": "html",
+        "rows_found": 121,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-nyj-espn",
+        "kind": "html",
+        "rows_found": 84,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-nyj-cbs",
+        "kind": "html",
+        "rows_found": 123,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-phi-espn",
+        "kind": "html",
+        "rows_found": 28,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-phi-cbs",
+        "kind": "html",
+        "rows_found": 124,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-pit-espn",
+        "kind": "html",
+        "rows_found": 86,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-pit-cbs",
+        "kind": "html",
+        "rows_found": 127,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-sea-espn",
+        "kind": "html",
+        "rows_found": 85,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-sea-cbs",
+        "kind": "html",
+        "rows_found": 126,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-sf-espn",
+        "kind": "html",
+        "rows_found": 29,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-sf-cbs",
+        "kind": "html",
+        "rows_found": 123,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-tb-espn",
+        "kind": "html",
+        "rows_found": 85,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-tb-cbs",
+        "kind": "html",
+        "rows_found": 119,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-ten-espn",
+        "kind": "html",
+        "rows_found": 87,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-ten-cbs",
+        "kind": "html",
+        "rows_found": 123,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-was-espn",
+        "kind": "html",
+        "rows_found": 38,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "team-was-cbs",
+        "kind": "html",
+        "rows_found": 123,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": null,
+        "health": {
+          "success_rate": 1.0,
+          "sample_size": 1,
+          "consecutive_failures": 0,
+          "degraded": false
+        }
+      },
+      {
+        "source": "seed-espn-mel-kiper-search",
+        "kind": "html_rendered",
+        "rows_found": 6,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": "playwright_browser_missing",
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      },
+      {
+        "source": "seed-espn-bill-barnwell-search",
+        "kind": "html_rendered",
+        "rows_found": 6,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": "playwright_browser_missing",
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      },
+      {
+        "source": "seed-espn-draft-home",
+        "kind": "html_rendered",
+        "rows_found": 49,
+        "events_added": 1,
+        "rendered": false,
+        "render_error": "playwright_browser_missing",
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      },
+      {
+        "source": "seed-nfl-mock-drafts",
+        "kind": "html_rendered",
+        "rows_found": 0,
+        "events_added": 0,
+        "note": "playwright_browser_missing",
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      },
+      {
+        "source": "seed-nfl-draft-news",
+        "kind": "html_rendered",
+        "rows_found": 0,
+        "events_added": 0,
+        "note": "playwright_browser_missing",
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      },
+      {
+        "source": "seed-nfl-combine-hub",
+        "kind": "html_rendered",
+        "rows_found": 136,
+        "events_added": 0,
+        "rendered": false,
+        "render_error": "playwright_browser_missing",
+        "health": {
+          "success_rate": 0.0,
+          "sample_size": 1,
+          "consecutive_failures": 1,
+          "degraded": false
+        }
+      }
+    ],
+    "render_fallback_attempted": 3,
+    "render_fallback_succeeded": 0,
+    "render_fallback_sources": [
+      {
+        "source": "nfl-combine-tracker-participants",
+        "rows_found": 0,
+        "note": "Rendered fetch unavailable (playwright_browser_missing)."
+      }
+    ]
+  }
 }

@@ -1,0 +1,30 @@
+{
+  "_description": "Curated seed URLs for 2026 pro-day and testing updates. Used as low-confidence fill-only sources for missing measurable fields.",
+  "year": 2026,
+  "sources": [
+    {
+      "source_id": "nfl-combine-hub",
+      "url": "https://www.nfl.com/combine/"
+    },
+    {
+      "source_id": "nfl-draft-news",
+      "url": "https://www.nfl.com/news/draft/"
+    },
+    {
+      "source_id": "nfl-mock-drafts",
+      "url": "https://www.nfl.com/draft/mock-drafts"
+    },
+    {
+      "source_id": "espn-draft-home",
+      "url": "https://www.espn.com/nfl/draft/"
+    },
+    {
+      "source_id": "espn-kiper-search",
+      "url": "https://www.espn.com/search/_/q/mel%20kiper%20pro%20day"
+    },
+    {
+      "source_id": "espn-barnwell-search",
+      "url": "https://www.espn.com/search/_/q/bill%20barnwell%20nfl%20draft"
+    }
+  ]
+}

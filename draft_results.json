@@ -1,0 +1,181 @@
+[
+  {
+    "timestamp": "2026-04-03 02:30 UTC",
+    "settings": {
+      "num_teams": 12,
+      "scoring": "PPR",
+      "format": "Snake",
+      "roster_preset": "Standard",
+      "user_slot": 4
+    },
+    "history": [
+      {
+        "round": 1,
+        "pick": 4,
+        "player": "Jaxon Smith-Njigba",
+        "position": "WR",
+        "team": "SEA",
+        "adp": 120.4,
+        "ppg": 18.69,
+        "grade": "A-"
+      },
+      {
+        "round": 2,
+        "pick": 21,
+        "player": "Bijan Robinson",
+        "position": "RB",
+        "team": "ATL",
+        "adp": 116.1,
+        "ppg": 20.03,
+        "grade": "A-"
+      },
+      {
+        "round": 3,
+        "pick": 28,
+        "player": "Jahmyr Gibbs",
+        "position": "RB",
+        "team": "DET",
+        "adp": 116.6,
+        "ppg": 19.37,
+        "grade": "A-"
+      },
+      {
+        "round": 4,
+        "pick": 45,
+        "player": "James Cook",
+        "position": "RB",
+        "team": "BUF",
+        "adp": 130.0,
+        "ppg": 16.88,
+        "grade": "B+"
+      },
+      {
+        "round": 5,
+        "pick": 52,
+        "player": "Puka Nacua",
+        "position": "WR",
+        "team": "LAR",
+        "adp": 226.8,
+        "ppg": 20.04,
+        "grade": "B-"
+      },
+      {
+        "round": 6,
+        "pick": 69,
+        "player": "Sam LaPorta",
+        "position": "TE",
+        "team": "DET",
+        "adp": 155.0,
+        "ppg": 11.79,
+        "grade": "B-"
+      },
+      {
+        "round": 7,
+        "pick": 76,
+        "player": "Drake London",
+        "position": "WR",
+        "team": "ATL",
+        "adp": 244.4,
+        "ppg": 15.4,
+        "grade": "C+"
+      },
+      {
+        "round": 8,
+        "pick": 93,
+        "player": "D'Andre Swift",
+        "position": "RB",
+        "team": "CHI",
+        "adp": 273.0,
+        "ppg": 12.77,
+        "grade": "C"
+      },
+      {
+        "round": 9,
+        "pick": 100,
+        "player": "Chuba Hubbard",
+        "position": "RB",
+        "team": "CAR",
+        "adp": 277.1,
+        "ppg": 12.5,
+        "grade": "C"
+      },
+      {
+        "round": 10,
+        "pick": 117,
+        "player": "Jakobi Meyers",
+        "position": "WR",
+        "team": "JAX",
+        "adp": 256.0,
+        "ppg": 13.89,
+        "grade": "C"
+      },
+      {
+        "round": 11,
+        "pick": 124,
+        "player": "Caleb Williams",
+        "position": "QB",
+        "team": "CHI",
+        "adp": 207.1,
+        "ppg": 18.87,
+        "grade": "B"
+      },
+      {
+        "round": 12,
+        "pick": 141,
+        "player": "Nico Collins",
+        "position": "WR",
+        "team": "HOU",
+        "adp": 236.8,
+        "ppg": 16.46,
+        "grade": "C+"
+      },
+      {
+        "round": 13,
+        "pick": 148,
+        "player": "Jaylen Warren",
+        "position": "RB",
+        "team": "PIT",
+        "adp": 263.2,
+        "ppg": 13.41,
+        "grade": "C"
+      },
+      {
+        "round": 14,
+        "pick": 165,
+        "player": "A.J. Brown",
+        "position": "WR",
+        "team": "PHI",
+        "adp": 253.4,
+        "ppg": 14.16,
+        "grade": "C"
+      },
+      {
+        "round": 15,
+        "pick": 172,
+        "player": "Xavier Worthy",
+        "position": "WR",
+        "team": "KC",
+        "adp": 266.6,
+        "ppg": 12.6,
+        "grade": "C"
+      }
+    ],
+    "roster_names": [
+      "Jaxon Smith-Njigba",
+      "Bijan Robinson",
+      "Jahmyr Gibbs",
+      "James Cook",
+      "Puka Nacua",
+      "Sam LaPorta",
+      "Drake London",
+      "D'Andre Swift",
+      "Chuba Hubbard",
+      "Jakobi Meyers",
+      "Caleb Williams",
+      "Nico Collins",
+      "Jaylen Warren",
+      "A.J. Brown",
+      "Xavier Worthy"
+    ]
+  }
+]

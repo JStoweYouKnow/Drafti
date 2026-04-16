@@ -15,6 +15,8 @@ Usage:
     python pro/refresh_all.py --force           # refresh everything regardless of age
     python pro/refresh_all.py --board           # board + velocity only
     python pro/refresh_all.py --combine         # combine measurables only
+    python pro/refresh_all.py --pro-day         # pro-day fill-only measurables
+    python pro/refresh_all.py --cfb             # CFB production stats ingest
     python pro/refresh_all.py --historical      # historical outcomes only
     python pro/refresh_all.py --status          # show staleness report, no fetching
 """
@@ -42,6 +44,8 @@ THRESHOLDS = {
     "board_current":    7  if _is_draft_season() else 30,
     "board_historical": 90,
     "combine":          14,
+    "pro_day":          7  if _is_draft_season() else 21,
+    "cfb_production":   14,
     "historical":       30,
     "cap_context":      7  if _is_draft_season() else 30,
 }
@@ -80,6 +84,23 @@ def _board_has_combine(year):
     """Check if the current board has combine measurables populated."""
     path = os.path.join(DATA_DIR, f"consensus_board_{year}.json")
     if not os.path.exists(path):
+        return False
+
+
+def _board_has_cfb_stats(year):
+    """Check if the current board has non-empty CFB production stats."""
+    path = os.path.join(DATA_DIR, f"consensus_board_{year}.json")
+    if not os.path.exists(path):
+        return False
+    try:
+        with open(path) as f:
+            board = json.load(f)
+        prospects = board.get("prospects", [])
+        return any(
+            any((k and not str(k).startswith("_")) and v is not None for k, v in p.get("cfb_stats", {}).items())
+            for p in prospects[:60]
+        )
+    except Exception:
         return False
     try:
         with open(path) as f:
@@ -175,6 +196,28 @@ def refresh_combine(force=False):
 
     return _run("fetch_combine_data.py", [str(y) for y in years_to_enrich],
                 label=f"Fetch combine measurables for {years_to_enrich}")
+
+
+def refresh_pro_day(force=False):
+    """Fill missing measurable fields from curated pro-day seed sources."""
+    age = _board_age(CURRENT_YEAR)
+    threshold = THRESHOLDS["pro_day"]
+    if not force and age < threshold:
+        print(f"  Pro day fill for {CURRENT_YEAR}: board {age}d old (threshold {threshold}d) — skipping")
+        return False
+    return _run("fetch_pro_day_data.py", [str(CURRENT_YEAR)],
+                label=f"Fetch pro-day fill-only measurables for {CURRENT_YEAR}")
+
+
+def refresh_cfb_production(force=False):
+    """Ingest CFB production metrics from CollegeFootballData and enrich board."""
+    age = _board_age(CURRENT_YEAR)
+    threshold = THRESHOLDS["cfb_production"]
+    if not force and _board_has_cfb_stats(CURRENT_YEAR) and age < threshold:
+        print(f"  CFB production for {CURRENT_YEAR}: already present, board {age}d old — skipping")
+        return False
+    return _run("cfb_production_ingest.py", [str(CURRENT_YEAR)],
+                label=f"Ingest CFB production stats for {CURRENT_YEAR}")
 
 
 def refresh_historical_outcomes(force=False):
@@ -281,6 +324,14 @@ def main():
         refresh_combine(force=True)
         return
 
+    if "--pro-day" in args:
+        refresh_pro_day(force=True)
+        return
+
+    if "--cfb" in args:
+        refresh_cfb_production(force=True)
+        return
+
     if "--historical" in args:
         refresh_historical_outcomes(force=True)
         return
@@ -292,6 +343,8 @@ def main():
 
     refresh_board(force=force)
     refresh_combine(force=force)
+    refresh_pro_day(force=force)
+    refresh_cfb_production(force=force)
     refresh_historical_outcomes(force=force)
     refresh_historical_boards(force=False)  # historical boards rarely need re-scraping
     refresh_cap_context(force=force)

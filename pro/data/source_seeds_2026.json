@@ -1,0 +1,48 @@
+{
+  "_description": "Curated high-priority URLs for 2026 draft scraping. Use article/search pages that are likely to publish new mocks, pro day updates, or contributor analysis.",
+  "year": 2026,
+  "sources": [
+    {
+      "source_id": "seed-espn-mel-kiper-search",
+      "tier": "media",
+      "kind": "html_rendered",
+      "url": "https://www.espn.com/search/_/q/mel%20kiper%20nfl%20mock%20draft",
+      "allowed_item_hosts": ["espn.com"]
+    },
+    {
+      "source_id": "seed-espn-bill-barnwell-search",
+      "tier": "media",
+      "kind": "html_rendered",
+      "url": "https://www.espn.com/search/_/q/bill%20barnwell%20nfl%20draft",
+      "allowed_item_hosts": ["espn.com"]
+    },
+    {
+      "source_id": "seed-espn-draft-home",
+      "tier": "media",
+      "kind": "html_rendered",
+      "url": "https://www.espn.com/nfl/draft/",
+      "allowed_item_hosts": ["espn.com"]
+    },
+    {
+      "source_id": "seed-nfl-mock-drafts",
+      "tier": "official",
+      "kind": "html_rendered",
+      "url": "https://www.nfl.com/draft/mock-drafts",
+      "allowed_item_hosts": ["nfl.com"]
+    },
+    {
+      "source_id": "seed-nfl-draft-news",
+      "tier": "official",
+      "kind": "html_rendered",
+      "url": "https://www.nfl.com/news/draft/",
+      "allowed_item_hosts": ["nfl.com"]
+    },
+    {
+      "source_id": "seed-nfl-combine-hub",
+      "tier": "official",
+      "kind": "html_rendered",
+      "url": "https://www.nfl.com/combine/",
+      "allowed_item_hosts": ["nfl.com"]
+    }
+  ]
+}

@@ -151,6 +151,7 @@ UI_TEXT_LABEL = 0.68
 # ---------------------------------------------------------------------------
 _btn_bg    = "#2e2e3a" if st.session_state.theme == "dark" else "#e8e8f0"
 _btn_hover = "#3a3a4a" if st.session_state.theme == "dark" else "#d8d8e8"
+_light_surface_text = "#111827"
 _SYS_FONT  = "system-ui,sans-serif"
 _MONO_FONT = "SFMono-Regular,Consolas,monospace"
 st.markdown(f"""<style>
@@ -188,6 +189,26 @@ div[data-testid="stExpander"] details summary:hover{{background:{STAT_BG}}}
 div[data-testid="stExpander"] details summary:focus-visible{{outline:2px solid {ACCENT_GRN};outline-offset:2px}}
 div[data-testid="stExpander"] details summary span{{color:{TEXT_SEC}}}
 div[data-testid="stPopover"] button:focus-visible{{outline:2px solid {ACCENT_GRN};outline-offset:2px}}
+/* Keep modal/popover actions readable in dark mode */
+div[data-testid="stPopoverContent"] .stButton>button,
+div[data-testid="stModal"] .stButton>button{{background:{_btn_bg};color:{TEXT_PRI};border:1px solid {BORDER}}}
+div[data-testid="stPopoverContent"] .stButton>button:hover,
+div[data-testid="stModal"] .stButton>button:hover{{background:{_btn_hover};color:{TEXT_PRI};border-color:{ACCENT_GRN}}}
+div[data-testid="stPopoverContent"] .stButton>button[kind="primary"],
+div[data-testid="stModal"] .stButton>button[kind="primary"]{{background:linear-gradient(135deg,#10b981,#059669);color:#fff;border:none}}
+div[data-testid="stPopoverContent"] .stButton>button * ,
+div[data-testid="stModal"] .stButton>button *{{color:inherit !important}}
+/* Streamlit data editor / popover utility controls use non-.stButton buttons */
+div[data-testid="stPopoverContent"] button,
+div[data-testid="stPopoverContent"] button span,
+div[data-testid="stPopoverContent"] button svg,
+div[data-testid="stDataFrame"] button,
+div[data-testid="stDataFrame"] button span,
+div[data-testid="stDataFrame"] button svg{{
+  color:{_light_surface_text} !important;
+  fill:{_light_surface_text} !important;
+  opacity:1 !important;
+}}
 </style>""", unsafe_allow_html=True)
 
 # ---------------------------------------------------------------------------
@@ -405,6 +426,103 @@ def _render_eyebrow(text: str, margin_bottom: int = UI_SPACE_2):
     )
 
 
+def _render_key_findings_panel(state, roster, recs, pick_num: int):
+    """Show three concrete, data-backed draft insights."""
+    scoring_key = state.get("scoring", _draft_scoring_key())
+    scarcity = get_positional_scarcity(state["available_players"], scoring_key)
+    needs = get_positional_needs(roster, _roster_preset())
+    ahead = picks_until_next_turn(state)
+    likely_gone = get_players_likely_gone(state, max_show=max(6, ahead))
+
+    # Insight 1: Positional scarcity signal
+    core_pos = ("RB", "WR", "TE", "QB")
+    scarce_pos = sorted(core_pos, key=lambda p: scarcity.get(p, {}).get("startable", 999))[0]
+    scarce_left = scarcity.get(scarce_pos, {}).get("startable", 0)
+    insight_1 = {
+        "title": "Scarcity Pressure",
+        "body": (
+            "Pick #" + str(pick_num) + ": " + str(scarce_left) + " startable " + scarce_pos + "s remain in pool; "
+            + str(ahead) + " opponent pick" + ("s" if ahead != 1 else "") + " before your next turn."
+        ),
+        "accent": WARNING_TX if scarce_left <= 6 else INFO_TX,
+    }
+
+    # Insight 2: Value edge from top recommendation
+    if recs:
+        top_rec = recs[0]
+        adp_round = max(1, math.ceil(float(top_rec["adp"]) / float(max(6, _draft_num_teams()))))
+        round_now = max(1, int(state.get("current_round", 1)))
+        round_edge = adp_round - round_now
+        next_gap = 0.0
+        if len(recs) >= 2:
+            next_gap = float(recs[0]["vor"]) - float(recs[1]["vor"])
+        insight_2 = {
+            "title": "Best Value Edge",
+            "body": (
+                top_rec["player"] + " grades " + top_rec["grade"]
+                + " with VOR " + str(round(float(top_rec["vor"]), 2))
+                + "; ADP round edge "
+                + ("+" if round_edge >= 0 else "")
+                + str(round_edge)
+                + (" and +" + str(round(next_gap, 2)) + " VOR vs next option." if next_gap > 0 else ".")
+            ),
+            "accent": SUCCESS_TX,
+        }
+    else:
+        insight_2 = {
+            "title": "Best Value Edge",
+            "body": "No recommendation signal available yet; make a pick to generate value deltas.",
+            "accent": TEXT_SEC,
+        }
+
+    # Insight 3: Bye-week concentration risk
+    bye_counts, bye_conflicts = get_roster_bye_analysis(roster)
+    if bye_conflicts:
+        busiest_week = max(bye_conflicts.items(), key=lambda x: len(x[1]))
+        week_n = busiest_week[0]
+        ct = len(busiest_week[1])
+        insight_3 = {
+            "title": "Bye Week Concentration",
+            "body": "Week " + str(week_n) + " already holds " + str(ct) + " roster players; avoid stacking more from that bye.",
+            "accent": DANGER_TX,
+        }
+    elif bye_counts:
+        busiest_week = max(bye_counts.items(), key=lambda x: len(x[1]))
+        week_n = busiest_week[0]
+        ct = len(busiest_week[1])
+        insight_3 = {
+            "title": "Bye Week Concentration",
+            "body": "Current max bye overlap is Week " + str(week_n) + " with " + str(ct) + " player" + ("s" if ct != 1 else "") + ".",
+            "accent": INFO_TX,
+        }
+    else:
+        at_risk_names = [p["name"] for p in likely_gone[:3]]
+        insight_3 = {
+            "title": "Board Volatility",
+            "body": (
+                str(len(likely_gone[:ahead])) + " likely gone before your next pick"
+                + (": " + ", ".join(at_risk_names) if at_risk_names else ".")
+            ),
+            "accent": INFO_TX,
+        }
+
+    findings = [insight_1, insight_2, insight_3]
+    _render_eyebrow("Key Findings", margin_bottom=10)
+    cols = st.columns(3)
+    for idx, finding in enumerate(findings):
+        with cols[idx]:
+            st.markdown(
+                "<div style=\"background:" + CARD_BG + ";border:1px solid " + BORDER + ";"
+                "border-radius:" + str(UI_RADIUS_MD) + "px;padding:" + str(UI_SPACE_4) + "px;min-height:142px;\">"
+                "<div style=\"color:" + finding["accent"] + ";font-size:0.65rem;font-weight:800;"
+                "text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;\">"
+                + html.escape(finding["title"]) + "</div>"
+                "<div style=\"color:" + TEXT_PRI + ";font-size:" + str(UI_TEXT_SM) + "rem;line-height:1.45;\">"
+                + html.escape(finding["body"]) + "</div></div>",
+                unsafe_allow_html=True,
+            )
+
+
 def _roster_to_csv_bytes(roster, scoring_key: str) -> bytes:
     """Serialize current roster to UTF-8 CSV bytes."""
     rows = []
@@ -521,7 +639,7 @@ def _render_pool_browser_fragment():
 
     st.dataframe(
         display_df,
-        use_container_width=True,
+        width="stretch",
         height=600,
         hide_index=True,
         column_config={
@@ -677,7 +795,7 @@ def _render_lookup_fragment():
                 sim_df["ADP"] = sim_df["ADP"].round(1)
                 sim_df["PPG"] = [round(effective_fantasy_ppg(p0["ppg"], p0["position"], _lookup_sk, p0), 2) for p0 in similar]
                 st.dataframe(
-                    sim_df, use_container_width=True, hide_index=True,
+                    sim_df, width="stretch", hide_index=True,
                     column_config={
                         "Photo": st.column_config.ImageColumn("Photo", width="small"),
                         "Player": st.column_config.TextColumn("Player", width="large"),
@@ -718,13 +836,13 @@ def _render_lookup_fragment():
         if top10.empty:
             _empty_table_state("No players with positive projected PPG in the pool.")
         else:
-            st.dataframe(top10, use_container_width=True, hide_index=True, column_config=_cfg_top10)
+            st.dataframe(top10, width="stretch", hide_index=True, column_config=_cfg_top10)
     with sc2:
         _render_eyebrow("Best ADP Value (VOR)", margin_bottom=8)
         if top_vor.empty:
             _empty_table_state("No VOR data — check that the player pool has projections.")
         else:
-            st.dataframe(top_vor, use_container_width=True, hide_index=True, column_config=_cfg_top_vor)
+            st.dataframe(top_vor, width="stretch", hide_index=True, column_config=_cfg_top_vor)
 
 
 # ---------------------------------------------------------------------------
@@ -947,7 +1065,7 @@ with tab_draft:
                     unsafe_allow_html=True,
                 )
 
-                if st.button("Start Mock Draft", type="primary", use_container_width=True):
+                if st.button("Start Mock Draft", type="primary", width="stretch"):
                     st.session_state.draft_state = init_draft_state(
                         st.session_state.get("player_pool", DRAFT_PLAYER_POOL),
                         num_teams=int(st.session_state.league_num_teams),
@@ -1057,7 +1175,7 @@ with tab_draft:
                         )
                     st.markdown("<div style=\"display:grid;grid-template-columns:repeat(6,1fr);gap:8px;\">" + _pb_html + "</div>", unsafe_allow_html=True)
 
-                if st.button("\U0001f504 New Draft", use_container_width=True):
+                if st.button("\U0001f504 New Draft", width="stretch"):
                     st.session_state.draft_started = False
                     st.session_state.draft_state = None
                     st.session_state.draft_history = []
@@ -1118,6 +1236,10 @@ with tab_draft:
                         roster_preset=_roster_preset(),
                     )
                     st.session_state.current_recs = recs
+
+                # --- KEY FINDINGS (data-backed insights) ---
+                _render_key_findings_panel(state, roster, recs, pick_num)
+                st.markdown("<div style=\"margin-top:12px;\"></div>", unsafe_allow_html=True)
 
                 st.markdown(
                     "<h4 style=\"color:" + TEXT_SEC + ";margin:0 0 12px;font-family:system-ui;"
@@ -1200,7 +1322,7 @@ with tab_draft:
                     for bi, rec in enumerate(recs[:5]):
                         with btn_cols[bi]:
                             _btn_label = rec["player"] + "\n" + rec["position"] + " \u00b7 " + rec["grade"]
-                            if st.button(_btn_label, key="qpick_" + str(bi) + "_" + str(pick_num), use_container_width=True):
+                            if st.button(_btn_label, key="qpick_" + str(bi) + "_" + str(pick_num), width="stretch"):
                                 p_data = next((p for p in state["available_players"] if p["name"] == rec["player"]), None)
                                 result = _handle_pick(state, rec["player"], pick_num, p_data)
                                 if "error" not in result:
@@ -1217,7 +1339,7 @@ with tab_draft:
                 # Action buttons row: Confirm, Auto-Pick (#6), Undo (#2)
                 _act1, _act2, _act3 = st.columns([3, 2, 2])
                 with _act1:
-                    if st.button("\u2705 Confirm Pick", use_container_width=True, disabled=(selected_player == "\u2014 Select a player \u2014")):
+                    if st.button("\u2705 Confirm Pick", width="stretch", disabled=(selected_player == "\u2014 Select a player \u2014")):
                         if selected_player != "\u2014 Select a player \u2014":
                             p_data = next((p for p in state["available_players"] if p["name"] == selected_player), None)
                             result = _handle_pick(state, selected_player, pick_num, p_data)
@@ -1228,7 +1350,7 @@ with tab_draft:
                                 st.rerun()
                 with _act2:
                     # #6: Auto-pick (trade-down simulation)
-                    if st.button("\U0001f916 Auto-Pick", use_container_width=True, help="Let the AI draft the best available player for you"):
+                    if st.button("\U0001f916 Auto-Pick", width="stretch", help="Let the AI draft the best available player for you"):
                         st.session_state.undo_stack.append(save_undo_snapshot(state, st.session_state.draft_history))
                         result = make_auto_pick(state, _roster_preset())
                         if "error" not in result:
@@ -1260,7 +1382,7 @@ with tab_draft:
                             st.rerun()
                 with _act3:
                     # #2: Undo
-                    if st.button("\u21a9 Undo", use_container_width=True,
+                    if st.button("\u21a9 Undo", width="stretch",
                                  disabled=len(st.session_state.undo_stack) == 0,
                                  help="Undo last pick"):
                         if st.session_state.undo_stack:
@@ -1296,7 +1418,7 @@ with tab_draft:
                 st.markdown("---")
                 with st.popover("Reset Draft", help="Clear the active mock and start over"):
                     st.caption("This removes the current mock from the live session.")
-                    if st.button("\U0001f5d1 Confirm Reset", use_container_width=True):
+                    if st.button("\U0001f5d1 Confirm Reset", width="stretch"):
                         st.session_state.draft_started = False
                         st.session_state.draft_state = None
                         st.session_state.draft_history = []
@@ -1325,7 +1447,7 @@ with tab_draft:
                     data=_dl_roster_bytes,
                     file_name="drafti_roster.csv",
                     mime="text/csv",
-                    use_container_width=True,
+                    width="stretch",
                     key="download_roster_csv",
                 )
             with _dl2:
@@ -1334,7 +1456,7 @@ with tab_draft:
                     data=_dl_hist_bytes,
                     file_name="drafti_pick_history.csv",
                     mime="text/csv",
-                    use_container_width=True,
+                    width="stretch",
                     key="download_history_csv",
                     disabled=len(st.session_state.draft_history) == 0,
                 )
@@ -1566,7 +1688,7 @@ with tab_history:
                 _md_df = pd.DataFrame(_md_rows)
                 st.dataframe(
                     _md_df,
-                    use_container_width=True,
+                    width="stretch",
                     hide_index=True,
                     column_config={
                         "#": st.column_config.NumberColumn("#", format="%d", width="small"),
@@ -1618,7 +1740,7 @@ with tab_history:
             _recent_df = pd.DataFrame(_recent_rows)
             st.dataframe(
                 _recent_df,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
                 column_config={
                     "League": st.column_config.TextColumn("League", width="large"),

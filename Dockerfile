@@ -18,4 +18,4 @@ COPY . .
 RUN chmod +x start.sh
 
 EXPOSE 8080
-CMD ["bash", "-c", "echo 'CMD reached' && bash /app/start.sh"]
+CMD ["bash", "start.sh"]

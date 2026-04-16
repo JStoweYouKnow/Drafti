@@ -14,7 +14,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt \
     && playwright install chromium
 
+ENV PYTHONUNBUFFERED=1
+
 COPY . .
 
 EXPOSE 8080
-CMD streamlit run pro/app_pro.py --server.address 0.0.0.0 --server.port $PORT --server.headless true
+CMD ["sh", "-c", "streamlit run pro/app_pro.py --server.address 0.0.0.0 --server.port ${PORT:-8080} --server.headless true"]

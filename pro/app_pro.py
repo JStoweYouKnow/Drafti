@@ -153,6 +153,8 @@ DANGER_TX = "#f87171" if IS_DARK else "#b91c1c"
 # ---------------------------------------------------------------------------
 UI_SPACE_1 = 4; UI_SPACE_2 = 8; UI_SPACE_3 = 12
 UI_SPACE_4 = 16; UI_SPACE_5 = 24; UI_SPACE_6 = 32
+# Live tracker idle layout: offset right-column callout below _eyebrow so it lines up with the year control
+_LIVE_YEAR_ROW_TOP_PAD = UI_SPACE_5 + UI_SPACE_3 + UI_SPACE_1  # eyebrow block + widget gutter
 UI_RADIUS_SM = 8; UI_RADIUS_MD = 12; UI_RADIUS_LG = 14
 UI_TEXT_XS = 0.68; UI_TEXT_SM = 0.78; UI_TEXT_MD = 0.90
 UI_TEXT_H3 = 1.50; UI_TEXT_2XS = 0.62; UI_TEXT_LABEL = 0.68
@@ -571,7 +573,15 @@ if st.session_state.pro_mode == "Live Draft Tracker":
     # --- Setup / Controls ---
     ctrl_c1, ctrl_c2 = st.columns([1, 3])
     with ctrl_c1:
-        draft_year = st.number_input("Draft Year", min_value=2020, max_value=2030, value=st.session_state.draft_year, key="live_year")
+        _eyebrow("Draft Year")
+        draft_year = st.number_input(
+            "Draft Year",
+            min_value=2020,
+            max_value=2030,
+            value=st.session_state.draft_year,
+            key="live_year",
+            label_visibility="collapsed",
+        )
         st.session_state.draft_year = draft_year
 
         if st.session_state.live_draft_state is None:
@@ -732,6 +742,10 @@ if st.session_state.pro_mode == "Live Draft Tracker":
             else:
                 st.info("Enter picks above to start grading the draft.", icon="\U0001f3c8")
         else:
+            st.markdown(
+                "<div style='height:" + str(_LIVE_YEAR_ROW_TOP_PAD) + "px;'></div>",
+                unsafe_allow_html=True,
+            )
             st.info("Select a draft year and click **Start Tracking** to begin grading the NFL draft in real time.", icon="\u2b50")
 
 
